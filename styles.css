@@ -1,4 +1,32 @@
 body {
     margin: 0;
     font-family: 'Istok Web', sans-serif;
+    background-image: url(assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagem-de-fundo{
+    
+}
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.form-login {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 2em 4em 4em 4em;
+}
+
+.div-logo {
+    max-width: 300px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3C3B3B4D;
+}
+
+.img-logo {
+    width: 100%;
 }
