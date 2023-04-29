@@ -1,4 +1,7 @@
+
+
 body {
+    height: 100vh;
     margin: 0;
     font-family: 'Istok Web', sans-serif;
     background-image: url(assets/fundo.png);
