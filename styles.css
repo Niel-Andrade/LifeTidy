@@ -23,10 +23,8 @@ body {
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 2em 4em 4em 4em;
-    opacity: unset;
     max-width: 350px;
     margin: auto;
-    max-height: 380px;
 }
 
 .div-logo {
@@ -129,4 +127,64 @@ color: #3C3B3B;
 
 .div-borda{
     border-right: 1px solid #3C3B3B;
+}
+
+/*-------------------------------------------------------------------*/
+
+.div-cadastro{
+    display: flex;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    margin: 2em 4em;
+    justify-content: space-around;
+}
+
+.main-cadastro{
+    
+}
+
+.h2-cadastro{
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3C3B3B4D;
+    
+}
+
+.input-user{
+    background-image: url(assets/user.png);
+}
+
+.input-data{
+    background-image: url(assets/calendario.png);
+}
+
+.aside-cadastro{
+    margin: 2em 4em 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.div-logo-cadastro{
+    border: none;
+    width: 65%;
+}
+
+.div-recados-cadastro{
+    width: 100%;
+    max-width: 470px;
+    height: 75px;
+    background-color: #67818E;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+}
+
+.div-img-exibição{
+    width: 100%;
+    max-width: 470px;
+}
+
+.img-exibição{
+    width: 100%;
+    border-radius: 15px;
 }
