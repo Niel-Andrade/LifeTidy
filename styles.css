@@ -131,6 +131,10 @@ color: #3C3B3B;
     min-height: 100vh;
 }
 
+.header-cadastro{
+    display: none;
+}
+
 .div-cadastro{
     display: flex;
     background-color: #D9D9D9;
@@ -162,7 +166,6 @@ color: #3C3B3B;
 
 .div-logo-cadastro{
     border: none;
-
 }
 
 .div-recados-cadastro{
@@ -214,5 +217,26 @@ color: #3C3B3B;
   @media (max-width: 555px) {
     .aside-cadastro{
         display: none;
+    }
+    .header-cadastro{
+        display: flex;
+        padding: 3.5em 2em 0 2em;
+        justify-content: center;
+    }
+
+    .div-logo-cadastro {
+        width: 85%;
+        padding-bottom: 15px;
+    }
+
+    .div-cadastro{
+        flex-direction: column;
+    }
+    .form-cadastro {
+        padding: 0 1.5em 4em 1.5em;
+    }
+
+    .inputs::placeholder{
+        font-size: 13px;
     }
   }
