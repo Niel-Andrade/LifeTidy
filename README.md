@@ -1,6 +1,8 @@
 # Projeto Life Tidy
 
+### 💡 Ideia do projeto:
 
+Com a correria do dia a dia e a falta de tempo, muitas pessoas enfrentam problemas decorrentes do esquecimento. Pensando nisso, surge a ideia do LifeTidy, um aplicativo que visa ajudar os usuários a organizarem suas atividades cotidianas de forma simples e eficiente.
 
 ### 🛠️ Ajustes e melhorias:
 
@@ -9,8 +11,8 @@ O projeto não finalizado, está aberto para novas modificações. As próximas 
 - [x] Utilização do HTML 
 - [x] Utilização do CSS
 - [ ] Utilização do JavaScript
-- [ ] 
-- [ ]
+- [ ] ... 
+- [ ] ...
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
