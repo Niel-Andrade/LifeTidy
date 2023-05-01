@@ -26,7 +26,7 @@ O objetivo do projeto é criar um aplicativo de organização que ofereça aos u
 <table>
   <tr>
     <td align="center">
-      <a href="https://www.linkedin.com/in/jos%C3%A9-nataniel-4764a4224/">
+      <a href="https://www.linkedin.com/in/jose-nataniel/">
         <img src="https://raw.githubusercontent.com/Niel-Andrade/Project-Who-am-i/Master/assets/niel.jpg" width="100px;" height="170px" alt="my-photo"/><br>
         <sub>
           <b>Nataniel Andrade</b>
