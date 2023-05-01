@@ -1,9 +1,8 @@
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-family: 'Istok Web', sans-serif;
     background-image: url(assets/img-fundo.png);
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -11,6 +10,7 @@ body {
 
 .main-login {
     height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,6 @@ body {
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 2em 4em 4em 4em;
-    max-width: 350px;
-    margin: auto;
 }
 
 .div-logo {
@@ -37,8 +35,7 @@ body {
     width: 100%;
 }
 
-.inputs {
-    padding-left: 20px;
+.inputs {   
     background-color: #D2EFFD;
     border: none;
     border-radius: 10px;
@@ -129,7 +126,13 @@ color: #3C3B3B;
     border-right: 1px solid #3C3B3B;
 }
 
-/*-------------------------------------------------------------------*/
+@media (max-width: 555px) {
+    .form-login{
+        padding: 20px;
+    }
+  }
+
+/*---------------------------CADASTRO---------------------------------*/
 
 .div-cadastro{
     display: flex;
@@ -139,9 +142,6 @@ color: #3C3B3B;
     justify-content: space-around;
 }
 
-.main-cadastro{
-    
-}
 
 .h2-cadastro{
     font-size: 20px;
@@ -187,4 +187,4 @@ color: #3C3B3B;
 .img-exibição{
     width: 100%;
     border-radius: 15px;
-}
+}   
