@@ -235,7 +235,10 @@ color: #3C3B3B;
     .form-cadastro {
         padding: 0 1.5em 4em 1.5em;
     }
-
+    
+    .inputs{
+        min-width: 263px;
+}
     .inputs::placeholder{
         font-size: 13px;
     }
