@@ -11,7 +11,10 @@ O projeto não finalizado, está aberto para novas modificações. As próximas 
 - [x] Utilização do HTML 
 - [x] Utilização do CSS
 - [ ] Utilização do JavaScript
-- [ ] ... 
+- [x] Página de Cadastro 
+- [x] Página de Login
+- [ ] Tela Inicial
+- [ ] ...
 - [ ] ...
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
