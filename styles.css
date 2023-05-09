@@ -30,17 +30,18 @@ body {
     padding-bottom: 20px;
     border-bottom: 1px solid #3C3B3B4D;
 }
+
 .img-logo {
     width: 100%;
 }
 
-.div-inputs-login{
+.div-inputs-login {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.inputs {   
+.inputs {
     background-color: #D2EFFD;
     border: none;
     border-radius: 10px;
@@ -54,22 +55,26 @@ body {
     padding-left: 40px;
     min-width: 216px;
 }
-.inputs:last-of-type {
+
+.input-senha:last-of-type {
     margin-bottom: 15px;
 }
-.inputs::placeholder{
+
+.inputs::placeholder {
     color: #3C3B3B;
     font-size: 15px;
     font-weight: 700;
 }
-.input-email{
+
+.input-email {
     background-image: url(assets/email.png);
 }
-.input-senha{
+
+.input-senha {
     background-image: url(assets/senha.png);
 }
 
-.button-login-cadastro{
+.button-login-cadastro {
     color: #FFFF;
     background-color: #0A3950;
     border-radius: 15px;
@@ -78,7 +83,7 @@ body {
     width: 150px;
     margin-bottom: 15px;
     font-size: 17px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .div-texto {
@@ -88,76 +93,84 @@ body {
     width: 100%;
     justify-content: center;
 }
-.p-login{
+
+.p-login {
     font-size: 13px;
     font-weight: 700;
     margin-right: 5px;
 }
 
-.link-cadastro{
+.link-cadastro {
     color: #5F98B4;
     text-decoration: none;
 }
-.link-cadastro:hover{
+
+.link-cadastro:hover {
     color: #0d4766;
     text-decoration: underline;
 }
 
-.div-login-com{
+.div-login-com {
     text-align: center;
 }
-.h4-login-com{
-color: #3C3B3B;
+
+.h4-login-com {
+    color: #3C3B3B;
 }
 
-.button-login{
+.button-login {
     width: 40px;
     height: 40px;
     border: none;
     background-size: cover;
     background-color: #ffffff00;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.button-login:hover{
+
+.button-login:hover {
     opacity: 50%;
 }
-.div-button{
+
+.div-button {
     display: flex;
     justify-content: center;
 }
 
-.login-google{
+.login-google {
     background-image: url(assets/GoogleIcon.png);
-    margin-right: 10px;
-}
-.login-facebook{
-    background-image: url(assets/facebookIcon.png);
-    margin-left: 10px;
+    
 }
 
-.div-borda{
+.login-facebook {
+    background-image: url(assets/facebookIcon.png);
+    
+}
+
+.div-borda {
     border-right: 1px solid #3C3B3B;
 }
 
 @media (max-width: 555px) {
-    .form-login{
+    .form-login {
         padding: 20px;
     }
-  }
+}
 
 /*---------------------------CADASTRO---------------------------------*/
-.div-cadastro-pai{
+.div-cadastro-pai {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
-.header-cadastro{
+.header-cadastro {
     display: none;
 }
 
-.div-cadastro{
+.div-cadastro {
     display: flex;
     background-color: #D9D9D9;
     border-radius: 15px;
@@ -166,32 +179,33 @@ color: #3C3B3B;
     max-width: 900px;
 }
 
-.h2-cadastro{
+.h2-cadastro {
     font-size: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #3C3B3B4D;
     width: 100%;
 }
 
-.input-user{
+.input-user {
     background-image: url(assets/user.png);
 }
-.input-data{
+
+.input-data {
     background-image: url(assets/calendario.png);
 }
 
-.aside-cadastro{
+.aside-cadastro {
     margin: 2em 4em 4em 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.div-logo-cadastro{
+.div-logo-cadastro {
     border: none;
 }
 
-.div-recados-cadastro{
+.div-recados-cadastro {
     width: 100%;
     max-width: 470px;
     background-color: #67818E;
@@ -200,48 +214,55 @@ color: #3C3B3B;
     text-align: center;
     min-width: 150px;
 }
-.p-cadastro{
+
+.p-cadastro {
     margin: 1em;
     text-shadow: 1px 1px 2px #dddcdc;
     animation: moveUpDown 2s ease-in-out infinite;
     font-size: 20px;
     min-width: 145px;
 }
+
 @keyframes moveUpDown {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-8px);
+        transform: translateY(-8px);
 
     }
-    100% {
-      transform: translateY(0);
-    } 
-  }
 
-.div-img-exibição{
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.div-img-exibição {
     width: 100%;
 }
-.img-exibição{
+
+.img-exibição {
     width: 100%;
     border-radius: 15px;
 }
 
 @media (max-width: 715px) {
-    .form-login{
+    .form-login {
         padding: 2em 1.5em 4em 1.5em;
     }
-    .aside-cadastro{
+
+    .aside-cadastro {
         margin: 2em 1.5em 4em 0;
     }
-  }
+}
 
-  @media (max-width: 555px) {
-    .aside-cadastro{
+@media (max-width: 555px) {
+    .aside-cadastro {
         display: none;
     }
-    .header-cadastro{
+
+    .header-cadastro {
         display: flex;
         padding: 3.5em 2em 0 2em;
         justify-content: center;
@@ -252,17 +273,73 @@ color: #3C3B3B;
         padding-bottom: 15px;
     }
 
-    .div-cadastro{
+    .div-cadastro {
         flex-direction: column;
     }
+
     .form-cadastro {
         padding: 0 1.5em 4em 1.5em;
     }
-    
-    .inputs{
+
+    .inputs {
         min-width: 263px;
-}
-    .inputs::placeholder{
+    }
+
+    .inputs::placeholder {
         font-size: 13px;
     }
-  }
+}
+
+/*---------------------------TELA INICIAL---------------------------------*/
+
+.header-tela-inicial {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    background-color: #D9D9D9;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-logo-header {
+    max-width: 150px;
+    margin-left: 1em;
+}
+
+.input-pesquisa {
+    margin: 0 2em 0 3em;
+    background-color: #FFFF;
+    background-image: url(assets/search.png);
+}
+.div-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.button-adicionar {
+    background-image: url(assets/adicionar.png);
+}
+
+.button-apagar {
+    background-image: url(assets/excluir.png);
+}
+    
+.button-aviso {
+    background-image: url(assets/notificacoes.png);
+}
+
+.button-desempenho {
+    background-image: url(assets/rendimento.png);
+}
+
+.div-perfil{
+    display: flex;
+    align-items: center;
+}
+
+.img-perfil{
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;   
+}
+
