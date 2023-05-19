@@ -140,12 +140,12 @@ body {
 
 .login-google {
     background-image: url(assets/GoogleIcon.png);
-    
+
 }
 
 .login-facebook {
     background-image: url(assets/facebookIcon.png);
-    
+
 }
 
 .div-borda {
@@ -307,11 +307,13 @@ body {
 }
 
 .input-pesquisa {
-    margin: 0 2em 0 3em;
+    margin: 0 2em 0 0;
+    width: 23em;
     background-color: #FFFF;
     background-image: url(assets/search.png);
 }
-.div-buttons{
+
+.div-buttons {
     display: flex;
     align-items: center;
 }
@@ -327,7 +329,7 @@ body {
     width: 35px;
     height: 35px;
 }
-    
+
 .button-aviso {
     background-image: url(assets/notificacoes.png);
     width: 35px;
@@ -340,45 +342,51 @@ body {
     height: 32px;
 }
 
-.div-perfil{
+.div-perfil {
     display: flex;
     align-items: center;
 }
 
-.img-perfil{
+.img-perfil {
     margin-left: 5px;
     width: 40px;
-    height: 40px;   
+    height: 40px;
 }
 
-.nav-lateral{
+.nav-lateral {
     height: 100vh;
     width: 15%;
     background-color: #031E2C;
 }
 
-.body-tela-inicial{
+.body-tela-inicial {
     background-color: #0A3950;
     background-image: none;
 }
 
-.div-categorias{
+.link-categorias {
     display: flex;
     align-items: center;
-    
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-.icons-tela-inicial{
+.link-categorias:hover{
+    opacity: 0.5;
+}
+
+.icons-tela-inicial {
     width: 30px;
     height: 30px;
-    margin: 5px 8px 2px 5px
-}
-.h4-icons{
-color: #FFFF;
-font-size: 14px;
+    margin: 5px 8px 2px 0;
 }
 
-.borda{
+.h4-icons {
+    color: #FFFF;
+    font-size: 14px;
+}
+
+.borda {
     border: 1px solid #FFFF;
     margin: 12px 25px 12px 0;
 }
