@@ -318,18 +318,26 @@ body {
 
 .button-adicionar {
     background-image: url(assets/adicionar.png);
+    width: 35px;
+    height: 35px;
 }
 
 .button-apagar {
     background-image: url(assets/excluir.png);
+    width: 35px;
+    height: 35px;
 }
     
 .button-aviso {
     background-image: url(assets/notificacoes.png);
+    width: 35px;
+    height: 35px;
 }
 
 .button-desempenho {
     background-image: url(assets/rendimento.png);
+    width: 32px;
+    height: 32px;
 }
 
 .div-perfil{
@@ -343,3 +351,34 @@ body {
     height: 40px;   
 }
 
+.nav-lateral{
+    height: 100vh;
+    width: 15%;
+    background-color: #031E2C;
+}
+
+.body-tela-inicial{
+    background-color: #0A3950;
+    background-image: none;
+}
+
+.div-categorias{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icons-tela-inicial{
+    width: 30px;
+    height: 30px;
+    margin: 5px 8px 2px 5px
+}
+.h4-icons{
+color: #FFFF;
+font-size: 14px;
+}
+
+.borda{
+    border: 1px solid #FFFF;
+    margin: 12px 25px 12px 0;
+}
