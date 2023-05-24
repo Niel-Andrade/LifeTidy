@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     height: 100%;
     margin: 0;
@@ -53,7 +56,7 @@ body {
     background-repeat: no-repeat;
     background-size: 25px;
     padding-left: 40px;
-    min-width: 216px;
+    min-width: 258px;
 }
 
 .input-senha:last-of-type {
@@ -75,7 +78,7 @@ body {
 }
 
 .button-login-cadastro {
-    color: #FFFF;
+    color: #FFFFFF;
     background-color: #0A3950;
     border-radius: 15px;
     border: none;
@@ -312,8 +315,8 @@ body {
 
 .input-pesquisa {
     margin: 0 2em 0 0;
-    width: 23em;
-    background-color: #FFFF;
+    width: 17em;
+    background-color: #FFFFFF;
     background-image: url(assets/search.png);
 }
 
@@ -358,9 +361,12 @@ body {
 }
 
 .nav-lateral {
-    height: 100vh;
-    width: 15%;
+    width: 18%;
     background-color: #031E2C;
+    min-height: 100vh;
+    padding: 0 15px 0px 15px;
+    box-sizing: content-box;
+    max-width: 350px;
 }
 
 .body-tela-inicial {
@@ -372,7 +378,6 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 .link-categorias:hover{
@@ -386,42 +391,57 @@ body {
 }
 
 .h4-icons {
-    color: #FFFF;
+    color: #FFFFFF;
     font-size: 14px;
 }
 
 .borda {
-    border: 1px solid #FFFF;
-    margin: 12px 25px 12px 0;
+    border: 1px solid #FFFFFF;
+    margin: 12px 25px 12px -20px;
 }
 
-.container-lembretes{
+.main-tela-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-lembretes, .container-compromissos{
     background-color: #D9D9D9;
     padding: 10px;
     border-radius: 15px;
     margin: 10px 25px;
+    height: 730px;
+}
+
+.container-compromissos{
+    max-width: 750px;
 }
 
 .h2-tela-inicial{
     color: #333333;
-    margin: 10px;
+    margin: 4px;
+    max-width: 229px;
+    font-size: 21px;
 }
 .h4-prazos,.p-prazos{
     color: #333333;
-    margin: 3px 8px;
+    margin: 3px;
 }
 
 .div-interna-container-lembretes{
-    background-color: #FFFF;
+    background-color: #FFFFFF;
     border-radius: 17px;
-    padding: 2px 5px;
+    padding: 8px 15px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 .div-informacoes-lembretes{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 220px;
+    min-width: 220px;
 }
 .div-prazos{
     display: flex;
@@ -432,14 +452,75 @@ body {
     background-color: #D9D9D9;
     border-radius: 17px;
     padding: 5px;
-    margin-bottom: 3px ;
+    margin: 10px 0 5px 0;
 }
 
 .h4-checkbox{
+    display: flex;
     margin: 2px;
+    align-items: center;
+
 }
+
+input[type="checkbox"].input-checkbox-finalizado {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
 
 .text-box{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
+
+.link-text-box, .p-text-box{
+    margin: 5px 0;
+    padding: 3px 10px;
+    background-color: #333333;
+    color: #FFFFFF;
+    text-decoration: none ;
+    border-radius: 15px;
+    font-size: 14.5px;
+    min-width: 61px;
+}
+.p-text-box{
+    background-color: #EA4335;
+    margin-left: 13px;
+}
+
+.div-descricao-detalhada{
+    display: flex;
+    max-width: 195px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 15px;
+    height: 100px;
+    box-sizing: content-box;
+}
+.img-icon-descricao{
+    height: 21px;
+}
+
+.p-descricao{
+    margin: 0 1px 2px 10px;
+    font-size: 12.5px;
+}
+
+.button-new{
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/new.png);
+    border: none;
+    background-size: cover;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+#calendar {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #FFFF;
+    border-radius: 15px;
+    padding: 7px 0;
+  }
