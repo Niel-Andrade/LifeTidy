@@ -1,7 +1,11 @@
-# Projeto Life Tidy (Em desenvolvimento)
-<img src="./screenshots/Cadastro.png" width="573px" alt="screenshots-Cadastro" > 
-<img src="./screenshots/login.png" alt="screenshots-Login" > 
-<img src="./screenshots/TelaInicial.png" width="573px" alt="screenshots-Tela-Inicial" >
+# Projeto Life Tidy
+> (Em desenvolvimento)
+
+## Tela de Cadastro e de Login
+<img src="./screenshots/login.png" width="390px" alt="screenshots-Login" > <img src="./screenshots/Cadastro.png" height="400px" width="510px"  alt="screenshots-Cadastro" >
+
+## Tela Inicial
+<img src="./screenshots/TelaInicial.png" alt="screenshots-Tela-Inicial" >
 
 > Plataforma web feita com HTML, CSS e JavaScript. Gerenciador de tarefas.
 
@@ -45,4 +49,4 @@ O objetivo do projeto é criar um aplicativo de organização que ofereça aos u
 </table>
 
 
-[⬆ Voltar ao topo](#projeto-Life-Tidy-(Em-desenvolvimento))<br>
+[⬆ Voltar ao topo](#projeto-life-tidy)<br>
