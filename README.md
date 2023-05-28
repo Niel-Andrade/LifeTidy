@@ -1,4 +1,9 @@
-# Projeto Life Tidy
+# Projeto Life Tidy (Em desenvolvimento)
+<img src="./screenshots/Cadastro.png" width="573px" alt="screenshots-Cadastro" > 
+<img src="./screenshots/login.png" alt="screenshots-Login" > 
+<img src="./screenshots/TelaInicial.png" width="573px" alt="screenshots-Tela-Inicial" >
+
+> Plataforma web feita com HTML, CSS e JavaScript. Gerenciador de tarefas.
 
 ### 💡 Ideia do projeto:
 
@@ -10,15 +15,16 @@ O projeto não finalizado, está aberto para novas modificações. As próximas 
 
 - [x] Utilização do HTML 
 - [x] Utilização do CSS
-- [ ] Utilização do JavaScript
+- [X] Utilização do JavaScript(API)
 - [x] Página de Cadastro 
 - [x] Página de Login
-- [ ] Tela Inicial
-- [ ] ...
-- [ ] ...
+- [x] Tela Inicial(Em desenvolvimento)
+- [ ] Tela de Apresentação
+- [ ] Tela de Aategorias
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ### 🎯 Objetivo:
 
@@ -39,4 +45,4 @@ O objetivo do projeto é criar um aplicativo de organização que ofereça aos u
 </table>
 
 
-[⬆ Voltar ao topo](#projeto-Life-Tidy)<br>
+[⬆ Voltar ao topo](#projeto-Life-Tidy-(Em-desenvolvimento))<br>
