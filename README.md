@@ -2,7 +2,7 @@
 > (Em desenvolvimento)
 
 ## Tela de Cadastro e de Login
-<img src="./screenshots/login.png" width="390px" alt="screenshots-Login" > <img src="./screenshots/Cadastro.png" height="400px" width="510px"  alt="screenshots-Cadastro" >
+<img src="./screenshots/login.png" width="350px" alt="screenshots-Login" > <img src="./screenshots/Cadastro.png" height="360px" width="510px"  alt="screenshots-Cadastro" >
 
 ## Tela Inicial
 <img src="./screenshots/TelaInicial.png" alt="screenshots-Tela-Inicial" >
@@ -24,7 +24,7 @@ O projeto não finalizado, está aberto para novas modificações. As próximas 
 - [x] Página de Login
 - [x] Tela Inicial(Em desenvolvimento)
 - [ ] Tela de Apresentação
-- [ ] Tela de Aategorias
+- [ ] Tela de Categorias
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
