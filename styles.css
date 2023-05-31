@@ -533,3 +533,38 @@ input[type="checkbox"].input-checkbox-finalizado {
     border-radius: 15px;
     padding: 10px;
   }
+
+  /*----------------TELA DE APRESENTAÇÃO----------------*/
+
+.body-tela-apresentacao{
+    background-image: none;
+    background-color: #FFFFFF;
+}
+.header-tela-apresentacao{
+    margin: 2em;
+}
+.nav-apresentacao{
+    display: flex;
+    justify-content: space-between ;
+}
+.div-nav-apresentacao{
+    display: flex;
+    align-items: center;
+}
+.link-nav-tela-apresentacao{
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 2em;
+}
+.login-apresentacao{
+    background-color: #D9D9D9;
+    padding: 0.7em 3.8em;
+    border-radius: 25px;
+}
+
+.link-nav-tela-apresentacao:hover{
+    box-shadow: 0px 10px 13px -1px;
+    border-radius: 25px;
+}
