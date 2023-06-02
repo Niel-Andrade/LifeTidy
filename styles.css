@@ -57,11 +57,7 @@ body {
     background-repeat: no-repeat;
     background-size: 25px;
     padding-left: 40px;
-    min-width: 258px;
-}
-
-input:focus {
-    outline-color: #0A3950;
+    min-width: 308px;
 }
 
 .input-senha:last-of-type {
@@ -264,7 +260,6 @@ input:focus {
     .form-login {
         padding: 2em 1.5em 4em 1.5em;
     }
-
     .aside-cadastro {
         margin: 2em 1.5em 4em 0;
     }
@@ -274,37 +269,29 @@ input:focus {
     .aside-cadastro {
         display: none;
     }
-
     .header-cadastro {
         display: flex;
         padding: 3.5em 2em 0 2em;
         justify-content: center;
     }
-
     .div-logo-cadastro {
         width: 85%;
         padding-bottom: 15px;
     }
-
     .div-cadastro {
         flex-direction: column;
     }
-
     .form-cadastro {
         padding: 0 1.5em 4em 1.5em;
     }
-
     .inputs {
-        min-width: 263px;
+        min-width: 303px;
     }
-
     .inputs::placeholder {
         font-size: 13px;
     }
 }
-
 /*---------------------------TELA INICIAL---------------------------------*/
-
 .main-principal {
     display: flex;
 }
