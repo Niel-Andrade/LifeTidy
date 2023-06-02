@@ -19,14 +19,18 @@
         <main class="main-login">
             <form class="form-login" action="">
                 <div class="div-logo">
-                    <a href="index.html">
+                    <a href="apresentacao.html">
                         <img class="img-logo" src="assets/logo.png"
                             alt="logo-lifeTidy">
                     </a>
                 </div>
                 <div class="div-inputs-login" >
-                    <input class="inputs input-email" type="email" placeholder="E-MAIL" required>
-                    <input class="inputs input-senha" type="password" placeholder="SENHA" required>
+                    <input class="inputs input-email" type="email" placeholder="E-MAIL" required autofocus>
+                    <input class="inputs input-senha" type="password" placeholder="SENHA" required >
+                </div>
+                <div class="div-texto">
+                    <p class="p-login p-esqueceu-senha">ESQUECEU A SENHA?</p>
+                    <a class="link-cadastro" href="#">Recuperar</a>
                 </div>
                 <button class="button-login-cadastro" type="submit" >LOGIN</button>
                 <div class="div-texto">
@@ -44,6 +48,19 @@
             </form>
 
         </main>
-
+<script>
+    document.getElementsByClassName("form-login")[0].addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        var email = document.getElementsByClassName("input-email")[0].value;
+        var senha = document.getElementsByClassName("input-senha")[0].value;
+    
+        if (email !== "" && senha !== "") {
+          window.location.href = "index.html";
+        } else {
+          alert("Por favor, preencha todos os campos.");
+        }
+      });
+</script>
     </body>
 </html>

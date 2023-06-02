@@ -59,6 +59,10 @@ body {
     min-width: 258px;
 }
 
+input:focus {
+    outline-color: #0A3950;
+  }
+
 .input-senha:last-of-type {
     margin-bottom: 15px;
 }
@@ -98,9 +102,13 @@ body {
 }
 
 .p-login {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     margin-right: 5px;
+}
+.p-esqueceu-senha{
+    font-size: 13px;
+    margin: 0.5em;
 }
 
 .link-cadastro {

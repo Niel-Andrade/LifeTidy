@@ -1,93 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/icon-logo.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,500:1,700,900;1,700&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,500:1,700,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>LifeTidy</title>
+</head>
 
-        <link rel="stylesheet" href="styles.css">
-        <title>LifeTidy</title>
-    </head>
-
-    <body>
-        <div class="div-cadastro-pai">
-            <div class="div-cadastro">
-                <header class="header-cadastro">
-                    <div class="div-logo div-logo-cadastro">
-                        <a href="apresentação.html">
-                            <img class="img-logo" src="assets/logo.png"
-                                alt="logo-lifeTidy">
-                        </a>
-                    </header>
-                    <main class="main-cadastro">
-                        <form class="form-login form-cadastro" action>
-                            <h2 class="h2-cadastro">CADASTRO</h2
-                                class="h2-cadastro">
-                                <input class="inputs input-user" type="text"
-                                    placeholder="NOME COMPLETO" required>
-                                <input class="inputs input-data" type="date"
-                                    placeholder="DATA DE NASCIMENTO" required>
-                                <input class="inputs input-email" type="email"
-                                    placeholder="E-MAIL" required>
-                                <input class="inputs input-email" type="email"
-                                    placeholder="CONFIRME SEU E-MAIL" required>
-                                <input class="inputs input-senha"
-                                    type="password"
-                                    placeholder="SENHA" required>
-                                <input class="inputs input-senha"
-                                    type="password"
-                                    placeholder="CONFIRME SUA SENHA" required>
-                                <div class="div-texto">
-                                    <p class="p-login">JÁ POSSUI CADASTRO?</p>
-                                    <a class="link-cadastro" href="login.html">
-                                        Login !</a>
-                                </div>
-                                <div class="div-login-com">
-                                    <button class="button-login-cadastro"
-                                        type="submit">CADASTRAR</button>
-                                    <div>
-                                        <h4 class="h4-login-com">CRIAR CADASTRO
-                                            COM:</h4>
-                                        <div class="div-button">
-                                            <button type="button" class="button-login
-                                            login-google"></button>
-                                            <div class="div-borda"></div>
-                                            <button type="button" class="button-login
-                                            login-facebook"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </main>
-                        <aside class="aside-cadastro">
-                            <div class="div-logo div-logo-cadastro">
-                                <a href="index.html">
-                                    <img class="img-logo" src="assets/logo.png"
-                                        alt="logo-lifeTidy">
-                                </a>
-                            </div>
-                            <div class="div-recados-cadastro">
-                                <p class="p-cadastro">Viva de forma organizada,
-                                    torne o seu dia a dia mais produtivo. <br>
-                                    <br> A organização é a chave para a
-                                    produtividade.
-                                </p>
-
-                            </div>
-                            <div class="div-img-exibição">
-                                <img class="img-exibição"
-                                    src="assets/exibição.jpg"
-                                    alt>
-                            </div>
-                        </aside>
+<body>
+    <div class="div-cadastro-pai">
+        <div class="div-cadastro">
+            <main class="main-cadastro">
+                <form class="form-login form-cadastro" action="">
+                    <h2 class="h2-cadastro">CADASTRO</h2 class="h2-cadastro">
+                    <input class="inputs input-user" type="text" placeholder="NOME COMPLETO" required autofocus>
+                    <input class="inputs input-data" type="date" placeholder="DATA DE NASCIMENTO" required>
+                    <input class="inputs input-email" type="email" placeholder="E-MAIL" required>
+                    <input class="inputs input-email" type="email" placeholder="CONFIRME SEU E-MAIL" required>
+                    <input class="inputs input-senha" type="password" placeholder="SENHA" required>
+                    <input class="inputs input-senha" type="password" placeholder="CONFIRME SUA SENHA" required>
+                    <div class="div-texto">
+                        <p class="p-login">JÁ POSSUI CADASTRO?</p>
+                        <a class="link-cadastro" href="login.html">Login!</a>
                     </div>
+                    <div class="div-login-com">
+                        <button class="button-login-cadastro" type="submit">CADASTRAR</button>
+                        <div>
+                            <h4 class="h4-login-com">CRIAR CADASTRO COM:</h4>
+                            <div class="div-button">
+                                <button type="button" class="button-login login-google"></button>
+                                <div class="div-borda"></div>
+                                <button type="button" class="button-login login-facebook"></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </main>
+            <aside class="aside-cadastro">
+                <div class="div-logo div-logo-cadastro">
+                    <a href="apresentacao.html">
+                        <img class="img-logo" src="assets/logo.png" alt="logo-lifeTidy">
+                    </a>
                 </div>
-            </body>
-        </html>
+                <div class="div-recados-cadastro">
+                    <p class="p-cadastro">Viva de forma organizada,
+                        torne o seu dia a dia mais produtivo. <br>
+                        <br> A organização é a chave para a
+                        produtividade.
+                    </p>
+                </div>
+                <div class="div-img-exibição">
+                    <img class="img-exibição" src="assets/exibição.jpg" alt>
+                </div>
+            </aside>
+        </div>
+    </div>
+<script>
+    document.getElementsByClassName("form-cadastro")[0].addEventListener("submit", function(event) {
+        event.preventDefault();
+      
+        var nome = document.getElementsByClassName("input-user")[0].value;
+        var data = document.getElementsByClassName("input-data")[0].value;
+        var email = document.getElementsByClassName("input-email")[0].value;
+        var senha = document.getElementsByClassName("input-senha")[0].value;
+      
+        if (nome !== "" && data !== "" && email !== "" && senha !== "") {
+          window.location.href = "login.html";
+        } else {
+          alert("Por favor, preencha todos os campos.");
+        }
+      });
+</script>
+</body>
+</html>
