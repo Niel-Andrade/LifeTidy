@@ -260,6 +260,7 @@ body {
     .form-login {
         padding: 2em 1.5em 4em 1.5em;
     }
+
     .aside-cadastro {
         margin: 2em 1.5em 4em 0;
     }
@@ -269,28 +270,35 @@ body {
     .aside-cadastro {
         display: none;
     }
+
     .header-cadastro {
         display: flex;
         padding: 3.5em 2em 0 2em;
         justify-content: center;
     }
+
     .div-logo-cadastro {
         width: 85%;
         padding-bottom: 15px;
     }
+
     .div-cadastro {
         flex-direction: column;
     }
+
     .form-cadastro {
         padding: 0 1.5em 4em 1.5em;
     }
+
     .inputs {
         min-width: 303px;
     }
+
     .inputs::placeholder {
         font-size: 13px;
     }
 }
+
 /*---------------------------TELA INICIAL---------------------------------*/
 .main-principal {
     display: flex;
@@ -595,4 +603,78 @@ input[type="checkbox"].input-checkbox-finalizado {
 .link-nav-tela-apresentacao:hover::after {
     opacity: 1;
     border-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-principal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.texts-apresentacao {
+    width: 100%;
+    text-align: center;
+}
+
+.h1-text-apresentacao {
+    margin-bottom: 0.1em;
+}
+
+.p-text-apresentacao {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0.2em;
+}
+
+.container-divs {
+    height: 50em;
+    width: 100%;
+    margin-top: 20em;
+    display: flex;
+    justify-content: center;
+}
+
+.div-color-one {
+    width: 90%;
+    height: 20em;
+    background-color: #10192E;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.div-color-two {
+    width: 86%;
+    height: 25em;
+    background-color: #283556;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.div-color-three {
+    width: 82%;
+    height: 30em;
+    background-color: #4A5778;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.div-img-exibicao-tela-inicial {
+    width: 78%;
+    height: 35em;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.img-exibicao-tela-inicial {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
