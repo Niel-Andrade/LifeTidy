@@ -239,6 +239,72 @@
         </main>
     </div>
 
+    <!--Modal Nova tarefa -->
+
+    <dialog>
+        <div class="dialog-container">
+            <div class="div-button-exit">
+                <i class="far fa-window-close"></i>
+            </div>
+            <div class="div-button-logo">
+                <button class="button-login button-login-home button-adicionar"></button>
+                <div class="div-logo-header div-logo-header-apresentacao">
+                    <a href="home.html">
+                        <img class="img-logo" src="assets/logo.png" alt="logo-lifeTidy">
+                    </a>
+                </div>
+            </div>
+            <div class="div-adicionar-tarefa">
+                <div class="div-h2-tarefa">
+                    <h2 class="h2-adicionar-tarefa">ADICIONAR TAREFA</h2>
+                </div>
+                <form class="div-detalhes-tarefas">
+                    <div class="div-categoria informacoes-inputs">
+                        <h4 class="h4-infomacoes-inputs">CATEGORIA</h4>
+                        <select class="select-inputs" name="categoria" id="categoria">
+                            <option value="">ESTUDO </option>
+                            <option value="">COMPRAS </option>
+                            <option value="">VIAGENS </option>
+                            <option value="">SAÚDE </option>
+                            <option value="">AGENDA</option>
+                        </select>
+                        
+                    </div>
+                    <div class="div-importancia informacoes-inputs">
+                        <h4 class="h4-infomacoes-inputs">IMPORTÂNCIA</h4>
+                        <select class="select-inputs" name="importancia" id="importancia">
+                            <option value="">URGENTE </option>
+                            <option value="">REGULAR </option>
+                            <option value="">POUCO URGENTE </option>
+                        </select>
+                    </div>
+                    <div class="div-inicio informacoes-inputs">
+                        <h4 class="h4-infomacoes-inputs">INÍCIO</h4>
+                        <input class="select-inputs"  type="date">
+                        <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
+                        <input class="select-inputs" type="time">
+                    </div>
+                    <div class="div-conclusao informacoes-inputs">
+                        <h4 class="h4-infomacoes-inputs">CONCLUSÃO</h4>
+                        <input class="select-inputs"  type="date">
+                        <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
+                        <input class="select-inputs" type="time">
+                    </div>
+                    <div class="div-descricao-tarefa informacoes-inputs">
+                        <h4 class="h4-infomacoes-inputs">TAREFA</h4>
+                        <textarea class="select-inputs  select-inputs-tarefa" type="text"></textarea>
+                    </div>
+                    <div class="div-button-nova-tarefa">
+                    <button type="submit" class="button-criar-tarefa">CRIAR TAREFA</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </dialog>
+
+
+    <!--Script Navegação lateral-->
     <script type="text/javascript">
         $(document).ready(function () {
 
