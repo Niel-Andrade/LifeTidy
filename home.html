@@ -241,7 +241,7 @@
 
     <!--Modal Nova tarefa -->
 
-    <dialog>
+    <dialog class="dialog-tarefa">
         <div class="dialog-container">
             <div class="div-button-exit">
                 <i class="far fa-window-close"></i>
@@ -262,31 +262,31 @@
                     <div class="div-categoria informacoes-inputs">
                         <h4 class="h4-infomacoes-inputs">CATEGORIA</h4>
                         <select class="select-inputs" name="categoria" id="categoria">
-                            <option value="">ESTUDO </option>
-                            <option value="">COMPRAS </option>
-                            <option value="">VIAGENS </option>
-                            <option value="">SAÚDE </option>
-                            <option value="">AGENDA</option>
+                            <option value="estudo">ESTUDO </option>
+                            <option value="compras">COMPRAS </option>
+                            <option value="viagens">VIAGENS </option>
+                            <option value="saude">SAÚDE </option>
+                            <option value="agenda">AGENDA</option>
                         </select>
-                        
+
                     </div>
                     <div class="div-importancia informacoes-inputs">
                         <h4 class="h4-infomacoes-inputs">IMPORTÂNCIA</h4>
                         <select class="select-inputs" name="importancia" id="importancia">
-                            <option value="">URGENTE </option>
-                            <option value="">REGULAR </option>
-                            <option value="">POUCO URGENTE </option>
+                            <option value="urgente">URGENTE </option>
+                            <option value="regular">REGULAR </option>
+                            <option value="pouco-urgente">POUCO URGENTE </option>
                         </select>
                     </div>
                     <div class="div-inicio informacoes-inputs">
                         <h4 class="h4-infomacoes-inputs">INÍCIO</h4>
-                        <input class="select-inputs"  type="date">
+                        <input class="select-inputs" type="date">
                         <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
                         <input class="select-inputs" type="time">
                     </div>
                     <div class="div-conclusao informacoes-inputs">
                         <h4 class="h4-infomacoes-inputs">CONCLUSÃO</h4>
-                        <input class="select-inputs"  type="date">
+                        <input class="select-inputs" type="date">
                         <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
                         <input class="select-inputs" type="time">
                     </div>
@@ -295,14 +295,72 @@
                         <textarea class="select-inputs  select-inputs-tarefa" type="text"></textarea>
                     </div>
                     <div class="div-button-nova-tarefa">
-                    <button type="submit" class="button-criar-tarefa">CRIAR TAREFA</button>
+                        <button type="submit" class="button-criar-tarefa">CRIAR TAREFA</button>
                     </div>
                 </form>
             </div>
-
         </div>
     </dialog>
 
+
+    <dialog class="dialog-desempenho">
+        <div class="dialog-container">
+            <div class="div-button-exit">
+                <i class="far fa-window-close"></i>
+            </div>
+            <div class="div-button-logo">
+                <button class="button-login button-login-home button-desempenho"></button>
+                <div class="div-logo-header div-logo-header-apresentacao">
+                    <a href="home.html">
+                        <img class="img-logo" src="assets/logo.png" alt="logo-lifeTidy">
+                    </a>
+                </div>
+            </div>
+
+            <div class="div-adicionar-tarefa">
+                <div class="div-h2-tarefa">
+                    <h2 class="h2-adicionar-tarefa">INFORMATIVO DE RENDIMENTO</h2>
+                </div>
+            </div>
+            <div class="container-informacoes-modal">
+                <div class="container">
+                    <div class="nav bg ">
+                        <p>DIÁRIO</p>
+                    </div>
+                    <div class="nav bg active">
+                        <p>SEMANAL</p>
+                    </div>
+                </div>
+                <div class="container-informacoes-concluidas-modal">
+                    <i class="fas fa-medal"></i>
+                    <h2 class="h2-parabens">PARABÉNS!</h2>
+                    <p class="p-informacoes-desempenho">60% DAS SUAS TAREFAS ESTÃO CONCLUÍDAS NESSE PERÍODO, CONTINUE ASSIM!</p>
+                </div>
+                <div class="div-borda-redimento"></div>
+                <div class="div-porcentagem-redimento">
+                    <p class="p-informacoes-desempenho">COMPLETADAS HOJE</p>
+                    <div class="div-porcentagem-redimento-detalhada">
+                        <p class="p-text-box p-text-urgencia-alta">URGENTE</p>
+                        <p class="p-informacoes-desempenho">2 TAFEFAS FEITAS</p>
+                        <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
+                        <p class="p-informacoes-desempenho">50% CONCLUÍDOS</p>
+                    </div>
+                    <div class="div-porcentagem-redimento-detalhada">
+                        <p class="p-text-box p-text-urgencia-media">REGULAR</p>
+                        <p class="p-informacoes-desempenho">3 TAFEFAS FEITAS</p>
+                        <p class="p-informacoes-desempenho">0 TAFEFAS À FAZER</p>
+                        <p class="p-informacoes-desempenho">100% CONCLUÍDOS</p>
+                    </div>
+                    <div class="div-porcentagem-redimento-detalhada">
+                        <p class="p-text-box p-text-urgencia-baixa">POUCO URGENTE</p>
+                        <p class="p-informacoes-desempenho">1 TAFEFAS FEITAS</p>
+                        <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
+                        <p class="p-informacoes-desempenho">33% CONCLUÍDOS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <!--Script Navegação lateral-->
     <script type="text/javascript">
@@ -329,5 +387,4 @@
     </script>
 
 </body>
-
 </html>
