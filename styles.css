@@ -1236,3 +1236,36 @@
             display: none;
         }
     }
+
+    /*Tela-Hoje*/
+    .container-hoje-principal {
+        width: 97%;
+        background-color: #D9D9D9;
+        display: flex;
+        border-radius: 25px;
+        padding: 1em;
+        margin: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-hoje {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+    }
+
+    .container-hoje .div-borda-redimento {
+        margin: 1em 0;
+        width: 100%;
+    }
+
+    .div-container-hoje-tarefas {
+        height: 90%;
+        background-color: #A8A3A3;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 37px
+    }
