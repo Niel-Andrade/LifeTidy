@@ -6,9 +6,7 @@
         height: 100%;
         margin: 0;
         font-family: 'Istok Web', sans-serif;
-        background-image: url(assets/img-fundo.png);
-        background-size: cover;
-        background-attachment: fixed;
+        background-color: #0A3950;
     }
 
     .main-login {
@@ -383,11 +381,6 @@
         margin-left: 5px;
         width: 40px;
         height: 40px;
-    }
-
-    .body-tela-inicial {
-        background-color: #0A3950;
-        background-image: none;
     }
 
     /*Nav-lateral*/
@@ -1011,7 +1004,6 @@
     /*----------------TELA DE APRESENTAÇÃO----------------*/
 
     .body-tela-apresentacao {
-        background-image: none;
         background-color: #FFFFFF;
     }
 
