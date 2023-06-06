@@ -552,6 +552,7 @@
         width: 100%;
         display: flex;
         justify-content: end;
+        height: 36px;
     }
 
     .div-button-exit i {
@@ -681,39 +682,40 @@
         align-items: center;
     }
 
-    .nav {
+    .nav-button {
         border-radius: 50px;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
-        transition: 1s ease;
+        padding: 0 15px;
+        transition: 0.5s ease;
     }
 
-    .nav i {
+    .nav-button i {
         font-size: 1.3em;
         color: #a3aab1
     }
 
-    .nav p {
+    .nav-button p {
         font-weight: 600;
         color: #706969;
         font-size: 17px;
+        margin: 9px 0;
     }
 
-    .nav.active p {
+    .nav-button.active p {
         max-width: 300px;
         transition: 0.4s ease-in-out;
         font-weight: 600;
     }
 
-    .nav.active i,
-    .nav.active p {
+    .nav-button.active i,
+    .nav-button.active p {
         color: #333333;
     }
 
-    .nav.active.bg {
+    .nav-button.active.bg {
         background: #FFF;
     }
 
@@ -733,6 +735,7 @@
     .p-informacoes-desempenho {
         text-align: center;
         font-weight: bold;
+        margin-top: 0;
     }
 
     .div-borda-redimento {
@@ -756,31 +759,29 @@
         margin-bottom: 7px;
     }
 
-    .p-text-urgencia-alta,
-    .p-text-urgencia-media,
-    .p-text-urgencia-baixa { /*tenho que corrigir todos (p-text)  */
-        width: 83px;
-        height: 29px;
-        color: #EA4335;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-    }
-
-    .div-porcentagem-redimento-detalhada .p-informacoes-desempenho{
+    .div-porcentagem-redimento-detalhada .p-informacoes-desempenho {
         margin-top: 0;
         margin-bottom: 0;
         border-left: 3px solid #000000;
         padding: 0 8px;
         text-align: center;
-        
+
     }
 
     .div-porcentagem-redimento-detalhada .p-informacoes-desempenho:not(:last-child) {
         border-bottom: 2px solid #000000;
+
     }
+
+    .div-porcentagem-redimento-detalhada .p-box-prioridade {
+        height: 37px;
+
+    }
+
     /*fim modal redimento*/
-    
+
+
+
     .main-tela-principal {
         display: flex;
         flex-wrap: wrap;
@@ -863,21 +864,44 @@
         display: flex;
     }
 
-    .link-text-box,
-    .p-text-box {
-        margin: 0 0 5px 0;
+    .link-text-box {
+        margin: 0 13px 5px 0;
         padding: 3px 10px;
         background-color: #333333;
         color: #FFFFFF;
         text-decoration: none;
         border-radius: 15px;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        height: 25px;
+        font-weight: bold;
     }
 
-    .p-text-box {
+    .p-box-prioridade {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-radius: 22px;
+        height: 25px;
+        width: 100px;
+        font-weight: bold;
+        color: #FFF;
+        justify-content: center;
+    }
+
+    .p-urgencia-alta {
         background-color: #EA4335;
-        margin-left: 13px;
+    }
+
+    .p-urgencia-media {
+        background-color: #1B0BD7;
+    }
+
+    .p-urgencia-baixa {
+        background-color: #13F300;
     }
 
     .div-descricao-detalhada {

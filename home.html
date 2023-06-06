@@ -5,24 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>LifeTidy</title>
+    <!-- Fonte usada-->
     <link rel="icon" href="assets/icon-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,500:1,700,900;1,700&display=swap"
         rel="stylesheet">
-
+    <!-- link do CSS, script.js e calendario-->
     <link rel="stylesheet" href="styles.css">
-
+    <script src="script.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
-    <script src="calendar.js"></script>
-
-    <!-- Font Awesome -->
+    <!-- Font Awesome 4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 5-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>LifeTidy</title>
+
 </head>
 
 <body class="body-tela-inicial">
@@ -113,7 +113,7 @@
                     <div class="div-descricao-lembretes">
                         <div class="text-box">
                             <a class="link-text-box" href>ESTUDO</a>
-                            <p class="p-text-box">URGÊNCIA</p>
+                            <p class="p-box-prioridade p-urgencia-media">URGÊNCIA</p>
                         </div>
                         <div class="div-descricao-detalhada">
                             <img class="img-icon-descricao" src="assets/descricao.png" alt="icon-descrição">
@@ -150,7 +150,7 @@
                     <div class="div-descricao-lembretes">
                         <div class="text-box">
                             <a class="link-text-box" href>ESTUDO</a>
-                            <p class="p-text-box">URGÊNCIA</p>
+                            <p class="p-box-prioridade p-urgencia-baixa">URGÊNCIA</p>
                         </div>
                         <div class="div-descricao-detalhada">
                             <img class="img-icon-descricao" src="assets/descricao.png" alt="icon-descrição">
@@ -185,7 +185,7 @@
                     <div class="div-descricao-lembretes">
                         <div class="text-box">
                             <a class="link-text-box" href>VIAGEM</a>
-                            <p class="p-text-box">URGÊNCIA</p>
+                            <p class="p-box-prioridade p-urgencia-alta">URGÊNCIA</p>
                         </div>
                         <div class="div-descricao-detalhada">
                             <img class="img-icon-descricao" src="assets/descricao.png" alt="icon-descrição">
@@ -224,7 +224,7 @@
                     <div class="div-descricao-lembretes">
                         <div class="text-box">
                             <a class="link-text-box" href>ESTUDO</a>
-                            <p class="p-text-box">URGÊNCIA</p>
+                            <p class="p-box-prioridade p-urgencia-media">URGÊNCIA</p>
                         </div>
                         <div class="div-descricao-detalhada">
                             <img class="img-icon-descricao" src="assets/descricao.png" alt="icon-descrição">
@@ -240,11 +240,10 @@
     </div>
 
     <!--Modal Nova tarefa -->
-
     <dialog class="dialog-tarefa">
         <div class="dialog-container">
             <div class="div-button-exit">
-                <i class="far fa-window-close"></i>
+                <i class="fa fa-close"></i>
             </div>
             <div class="div-button-logo">
                 <button class="button-login button-login-home button-adicionar"></button>
@@ -302,11 +301,10 @@
         </div>
     </dialog>
 
-
     <dialog class="dialog-desempenho">
         <div class="dialog-container">
             <div class="div-button-exit">
-                <i class="far fa-window-close"></i>
+                <i class="fa fa-close"></i>
             </div>
             <div class="div-button-logo">
                 <button class="button-login button-login-home button-desempenho"></button>
@@ -324,10 +322,10 @@
             </div>
             <div class="container-informacoes-modal">
                 <div class="container">
-                    <div class="nav bg ">
+                    <div class="nav-button bg ">
                         <p>DIÁRIO</p>
                     </div>
-                    <div class="nav bg active">
+                    <div class="nav-button bg active">
                         <p>SEMANAL</p>
                     </div>
                 </div>
@@ -340,19 +338,19 @@
                 <div class="div-porcentagem-redimento">
                     <p class="p-informacoes-desempenho">COMPLETADAS HOJE</p>
                     <div class="div-porcentagem-redimento-detalhada">
-                        <p class="p-text-box p-text-urgencia-alta">URGENTE</p>
+                        <p class="p-box-prioridade p-urgencia-alta">URGENTE</p>
                         <p class="p-informacoes-desempenho">2 TAFEFAS FEITAS</p>
                         <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
                         <p class="p-informacoes-desempenho">50% CONCLUÍDOS</p>
                     </div>
                     <div class="div-porcentagem-redimento-detalhada">
-                        <p class="p-text-box p-text-urgencia-media">REGULAR</p>
+                        <p class="p-box-prioridade p-urgencia-media">REGULAR</p>
                         <p class="p-informacoes-desempenho">3 TAFEFAS FEITAS</p>
                         <p class="p-informacoes-desempenho">0 TAFEFAS À FAZER</p>
                         <p class="p-informacoes-desempenho">100% CONCLUÍDOS</p>
                     </div>
                     <div class="div-porcentagem-redimento-detalhada">
-                        <p class="p-text-box p-text-urgencia-baixa">POUCO URGENTE</p>
+                        <p class="p-box-prioridade p-urgencia-baixa">POUCO URGENTE</p>
                         <p class="p-informacoes-desempenho">1 TAFEFAS FEITAS</p>
                         <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
                         <p class="p-informacoes-desempenho">33% CONCLUÍDOS</p>
@@ -361,30 +359,5 @@
             </div>
         </div>
     </dialog>
-
-    <!--Script Navegação lateral-->
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $('.sub-btn').click(function () {
-                $(this).next('.sub-menu').slideToggle();
-                $(this).find('.dropdown').toggleClass('rotate');
-            });
-
-            $('.menu-btn').click(function () {
-                $('.side-bar').addClass('active');
-                $('.menu-btn').css("visibility", "hidden");
-                $('.main-tela-principal').removeClass('ativa')
-            });
-
-            $('.close-btn').click(function () {
-                $('.side-bar').removeClass('active');
-                $('.menu-btn').css("visibility", "visible");
-                $('.main-tela-principal').addClass('ativa')
-            });
-
-        });
-    </script>
-
 </body>
 </html>
