@@ -10,69 +10,95 @@ document.addEventListener('DOMContentLoaded', function () {
     selectable: true
   });
   calendar.render();
- 
+
 
   // Navegação Lateral
   $(document).ready(function () {
 
     $('.sub-btn').click(function () {
-        $(this).next('.sub-menu').slideToggle();
-        $(this).find('.dropdown').toggleClass('rotate');
+      $(this).next('.sub-menu').slideToggle();
+      $(this).find('.dropdown').toggleClass('rotate');
     });
 
     $('.menu-btn').click(function () {
-        $('.side-bar').addClass('active');
-        $('.menu-btn').css("visibility", "hidden");
-        $('.main-tela-principal').removeClass('ativa')
+      $('.side-bar').addClass('active');
+      $('.menu-btn').css("visibility", "hidden");
+      $('.main-tela-principal').removeClass('ativa')
     });
 
     $('.close-btn').click(function () {
-        $('.side-bar').removeClass('active');
-        $('.menu-btn').css("visibility", "visible");
-        $('.main-tela-principal').addClass('ativa')
+      $('.side-bar').removeClass('active');
+      $('.menu-btn').css("visibility", "visible");
+      $('.main-tela-principal').addClass('ativa')
     });
 
-});
+  });
 
 
-  //Modal-Tarefa e Rendimento
+  //Modal de Tarefa
   const buttonNew = document.querySelector(".button-adicionar")
   const modalTarefa = document.querySelector(".dialog-tarefa")
   const closeTarefa = document.querySelector(".div-button-exit i")
-  
 
   buttonNew.onclick = function () {
     modalTarefa.showModal()
   }
-  closeTarefa.onclick = function(){
-    modalTarefa.close() 
+  closeTarefa.onclick = function () {
+    modalTarefa.close()
   }
 
+  /* MODAL DE EXCLUSÃO */
+  const buttonExlusao = document.querySelector(".button-apagar")
+  const modalExclusao = document.querySelector(".dialog-exclusao")
+  const closeExclusao = modalExclusao.querySelector(".div-button-exit i")
+
+  buttonExlusao.onclick = function () {
+    modalExclusao.showModal()
+  }
+  closeExclusao.onclick = function () {
+    modalExclusao.close()
+  }
+
+  /* MODAL DE NOTIFICAÇÕES */
+  const buttonNotificacoes = document.querySelector(".button-aviso")
+  const modalNotificacoes = document.querySelector(".dialog-notificacoes")
+  const closeNotificacoes = modalNotificacoes.querySelector(".div-button-exit i")
+
+  buttonNotificacoes.onclick = function () {
+    modalNotificacoes.showModal()
+  }
+  closeNotificacoes.onclick = function () {
+    modalNotificacoes.close()
+  }
+
+  /* Modal de REDIMENTO-DESEMPENHO */
   const buttonInformativo = document.querySelector(".button-desempenho")
   const modalInformativo = document.querySelector(".dialog-desempenho")
   const closeDesempenho = modalInformativo.querySelector(".div-button-exit i")
 
-  buttonInformativo.onclick = function(){
+  buttonInformativo.onclick = function () {
     modalInformativo.showModal()
   }
-  closeDesempenho.onclick = function(){
+  closeDesempenho.onclick = function () {
     modalInformativo.close()
   }
 
-   //Botão no informativo de rendimento
-   const tabs = document.querySelectorAll(".nav-button");
 
-   tabs.forEach((clickedTab) => {
-       //evento click
-       clickedTab.addEventListener("click", ()=>{
-           //remove aba ativa atual
-           tabs.forEach((nav)=>{
-               nav.classList.remove("active");
-           });
-           //muda para a próxima aba ativa
-           clickedTab.classList.add("active");
-       });
-   });
+
+  //Botão no informativo de rendimento
+  const tabs = document.querySelectorAll(".nav-button");
+
+  tabs.forEach((clickedTab) => {
+    //evento click
+    clickedTab.addEventListener("click", () => {
+      //remove aba ativa atual
+      tabs.forEach((nav) => {
+        nav.classList.remove("active");
+      });
+      //muda para a próxima aba ativa
+      clickedTab.classList.add("active");
+    });
+  });
 
 
 });
