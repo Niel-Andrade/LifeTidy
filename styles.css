@@ -45,7 +45,6 @@
     }
 
     .inputs {
-        background-color: #D2EFFD;
         border: none;
         border-radius: 10px;
         height: 40px;
@@ -77,6 +76,10 @@
         background-image: url(assets/senha.png);
     }
 
+    .input-senha-login:last-of-type {
+        margin-bottom: 3px;
+    }
+
     .button-login-cadastro {
         color: #FFFFFF;
         background-color: #0A3950;
@@ -85,6 +88,7 @@
         height: 38px;
         width: 150px;
         margin-bottom: 15px;
+        margin-top: 10px;
         font-size: 17px;
         cursor: pointer;
     }
@@ -95,6 +99,10 @@
         align-items: center;
         width: 100%;
         justify-content: center;
+    }
+
+    .div-texto-sem-borda {
+        border-top: none;
     }
 
     .p-login {
@@ -118,14 +126,6 @@
         text-decoration: underline;
     }
 
-    .div-login-com {
-        text-align: center;
-    }
-
-    .h4-login-com {
-        color: #3C3B3B;
-    }
-
     .button-login {
         width: 40px;
         height: 40px;
@@ -139,25 +139,6 @@
 
     .button-login:hover {
         opacity: 50%;
-    }
-
-    .div-button {
-        display: flex;
-        justify-content: center;
-    }
-
-    .login-google {
-        background-image: url(assets/GoogleIcon.png);
-
-    }
-
-    .login-facebook {
-        background-image: url(assets/facebookIcon.png);
-
-    }
-
-    .div-borda {
-        border-right: 1px solid #3C3B3B;
     }
 
     @media (max-width: 555px) {
@@ -225,8 +206,6 @@
 
     .p-cadastro {
         margin: 1em;
-        text-shadow: 1px 1px 2px #dddcdc;
-        animation: moveUpDown 2s ease-in-out infinite;
         font-size: 20px;
         min-width: 145px;
     }
@@ -296,6 +275,58 @@
         .inputs::placeholder {
             font-size: 13px;
         }
+    }
+
+    /*---------------------------RECUPERAR SENHA------------------------------*/
+
+    .input-email-recuperacao {
+        margin-bottom: 15px;
+    }
+
+    .div-login-com {
+        width: 100%;
+    }
+
+    .aside-cadastro-recuperacao {
+        justify-content: center;
+    }
+
+    /*--------------------------Email Eviado-----------------------------*/
+    .div-recuperacao-senha{
+        max-width: 600px;
+    }
+    .div-logo-recuperacao {
+        width: 100%;
+        max-width: none;
+        border: none;
+    }
+
+    .img-logo-recuperacao {
+        width: 32%;
+    }
+
+    .h2-cadastro-recuperacao {
+        text-align: center;
+    }
+
+    .p-email-recuperacao {
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    .link-button-voltar {
+        color: #FFFFFF;
+        background-color: #0A3950;
+        border-radius: 20px;
+        height: 35px;
+        width: 95px;
+        margin-top: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
     }
 
     /*---------------------------TELA INICIAL---------------------------------*/
@@ -588,7 +619,6 @@
     }
 
     .div-detalhes-tarefas {
-        background-color: #FFF;
         background-color: #FFF;
         padding-bottom: 2em;
         border-bottom-left-radius: 15px;
@@ -1307,50 +1337,11 @@
 
     .container-divs {
         width: 100%;
-        margin-top: 20em;
+        margin-top: 2.5em;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
-
-    .div-color-one {
-        width: 90%;
-        height: 20em;
-        background-color: #10192E;
-        justify-content: center;
-        display: flex;
-        align-items: flex-end;
-        border-radius: 25px;
-    }
-
-    .div-color-two {
-        width: 86%;
-        height: 25em;
-        background-color: #283556;
-        justify-content: center;
-        display: flex;
-        align-items: flex-end;
-        border-radius: 25px;
-    }
-
-    .div-color-three {
-        width: 82%;
-        height: 30em;
-        background-color: #4A5778;
-        justify-content: center;
-        display: flex;
-        align-items: flex-end;
-        border-radius: 25px;
-    }
-
-    .div-img-exibicao-tela-inicial {
-        width: 78%;
-        height: 35em;
-        justify-content: center;
-        display: flex;
-        align-items: flex-end;
-        border-radius: 25px;
     }
 
     .img-exibicao-tela-inicial {
@@ -1358,6 +1349,7 @@
         height: 100%;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
+        max-width: 1265px;
     }
 
     .div-logo-header-apresentacao {
@@ -1369,6 +1361,7 @@
         background-color: #343E57;
         box-shadow: inset 0px 4px 4px #00000040;
         width: 100%;
+        padding-bottom: 20px;
     }
 
     .div-informacoes-left-right {
@@ -1380,6 +1373,7 @@
         color: #FFFFFF;
         text-align: center;
         font-size: 27px;
+        margin: 15px;
     }
 
     .div-todas-informacoes {
@@ -1420,6 +1414,7 @@
         height: 30em;
         background-color: #1F2B49;
         box-shadow: inset 0px 4px 4px #00000040;
+        padding-top: 20px;
     }
 
 

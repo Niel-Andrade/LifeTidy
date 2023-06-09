@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,500:1,700,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>LifeTidy</title>
+</head>
+
+<body>
+    <div class="div-cadastro-pai">
+        <div class="div-cadastro">
+            <main class="main-cadastro">
+                <form class="form-login form-cadastro" action="">
+                    <h2 class="h2-cadastro">RECUPERAR SENHA</h2 class="h2-cadastro">
+
+                    <input class="inputs input-data" type="date" placeholder="DATA DE NASCIMENTO" required>
+                    <input class="inputs input-email" type="email" placeholder="DIGITE O E-MAIL CADASTRADO" required>
+                    <input class="inputs input-email input-email-recuperacao" type="email"
+                        placeholder="CONFIRME SEU E-MAIL" required>
+
+                    <div class="div-texto"></div>
+                    <div class="div-login-com">
+                        <button class="button-login-cadastro" type="submit">RECUPERAR</button>
+                    </div>
+                </form>
+            </main>
+            <aside class="aside-cadastro aside-cadastro-recuperacao">
+                <div class="div-logo div-logo-cadastro">
+                    <a href="index.html">
+                        <img class="img-logo" src="assets/logo.png" alt="logo-lifeTidy">
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script>/*Avançar somente dse estiver todos os campos preenchido*/
+
+        document.getElementsByClassName("form-cadastro")[0].addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var data = document.getElementsByClassName("input-data")[0].value;
+            var email = document.getElementsByClassName("input-email")[0].value;
+            
+
+            if (data !== "" && email !== "") {
+                window.location.href = "emailEnviado.html";
+            } else {
+                alert("Por favor, preencha todos os campos.");
+            }
+        });
+    </script>
+</body>
+
+</html>
