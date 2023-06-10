@@ -5,11 +5,35 @@ document.addEventListener('DOMContentLoaded', function () {
     locale: 'pt-br',
     timeZone: 'UTC',
     initialView: 'dayGridMonth',
-    events: 'https://fullcalendar.io/api/demo-feeds/events.json',
+    events: [
+      {
+        title: 'APRESENTAÇÃO DE PROGRAMAÇÃO WEB',
+        start: '2023-06-01',
+        end: '2023-06-02',
+        color: '#13F300',
+      },
+      {
+        title: 'VISTORIA VEÍCULAR',
+        start: '2023-06-20',
+        end: '2023-06-20',
+        color: '#EA4335',
+      },
+      {
+        title: 'TRABALHO DE P.I.',
+        start: '2023-06-10',
+        end: '2023-06-10',
+        color: '#1B0BD7',
+      },
+      
+    ],
     editable: true,
-    selectable: true
+    selectable: true,
+    buttonText: {
+      today: 'Hoje'
+    }
   });
   calendar.render();
+
 
 
   // Navegação Lateral
@@ -48,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* MODAL DE EXCLUSÃO */
-  const buttonExlusao = document.querySelector(".button-apagar")
+  /*const buttonExlusao = document.querySelector(".button-apagar")
   const modalExclusao = document.querySelector(".dialog-exclusao")
   const closeExclusao = modalExclusao.querySelector(".div-button-exit i")
 
@@ -57,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   closeExclusao.onclick = function () {
     modalExclusao.close()
-  }
+  }*/
 
   /* MODAL DE NOTIFICAÇÕES */
   const buttonNotificacoes = document.querySelector(".button-aviso")

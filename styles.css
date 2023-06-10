@@ -350,7 +350,7 @@
     }
 
     .div-logo-header-home {
-        min-width: 9em;
+        min-width: 8em;
         height: 80%;
         margin: 0 0.5em 0 1em;
         width: 20%;
@@ -369,7 +369,12 @@
         display: flex;
         align-items: center;
         width: 60%;
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .div-buttons-modal{
+        display: flex;
+        justify-content: space-around;
     }
 
     .button-adicionar {
@@ -418,11 +423,11 @@
     /*Nav-lateral*/
 
     .side-bar {
-        width: 235px;
+        width: 193px;
         height: 100vh;
         position: relative;
         top: 0;
-        left: -100%;
+        left: -106%;
         overflow-y: auto;
         transition: 0.6s ease;
         transition-property: left;
@@ -435,8 +440,8 @@
     }
 
     .main-tela-principal.ativa {
-        left: -10em;
-        min-width: 90%;
+        left: -9em;
+        min-width: 88%;
     }
 
     .side-bar .menu {
@@ -491,7 +496,6 @@
     }
 
     .sub-menup {
-        display: none;
         display: none;
         position: absolute;
         top: 64px;
@@ -560,11 +564,12 @@
 
 
     dialog {
-        width: 80%;
+        width: 60%;
         border: none;
         background-color: transparent;
         border-radius: 25px;
         max-width: 58em;
+        padding: 0;
     }
 
     .div-button-exit {
@@ -590,9 +595,6 @@
 
     }
 
-    .div-adicionar-tarefa {
-        width: 78%;
-    }
 
     .div-h2-tarefa {
         background-color: #0A3950;
@@ -683,7 +685,6 @@
 
     .container-informacoes-modal {
         background-color: #FFF;
-        width: 78%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1081,7 +1082,7 @@
         left: 0;
         transition: 0.6s ease;
         transition-property: left;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .container-lembretes,
@@ -1089,32 +1090,33 @@
         background-color: #D9D9D9;
         padding: 10px;
         border-radius: 15px;
-        margin: 10px 25px;
+        margin: 10px 5px;
         height: 730px;
     }
 
     .container-compromissos {
         max-width: 750px;
+        margin-left: 0;
     }
 
     .h2-tela-inicial {
         color: #333333;
         margin: 4px;
-        max-width: 165px;
-        font-size: 18px;
+        max-width: 137px;
+        font-size: 14px;
     }
 
     .h4-prazos,
     .p-prazos {
         color: #333333;
         margin: 3px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .div-interna-container-lembretes {
         background-color: #FFFFFF;
         border-radius: 17px;
-        padding: 8px 15px;
+        padding: 8px;
         display: flex;
         margin-bottom: 10px;
     }
@@ -1134,7 +1136,7 @@
         display: flex;
         background-color: #D9D9D9;
         border-radius: 17px;
-        padding: 5px;
+        padding: 4px;
         margin: 10px 0 5px 0;
     }
 
@@ -1142,7 +1144,7 @@
         display: flex;
         margin: 2px;
         align-items: center;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     input[type="checkbox"].input-checkbox-finalizado {
@@ -1156,18 +1158,17 @@
     }
 
     .link-text-box {
-        margin: 0 13px 5px 0;
-        padding: 3px 10px;
+        margin: 0 9px 5px 0;
+        padding: 3px 5px;
         background-color: #333333;
         color: #FFFFFF;
         text-decoration: none;
         border-radius: 15px;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
         display: flex;
         align-items: center;
-        height: 25px;
-        font-weight: bold;
+        height: 22px;
     }
 
     .p-box-prioridade {
@@ -1176,11 +1177,11 @@
         align-items: center;
         text-align: center;
         border-radius: 22px;
-        height: 25px;
-        width: 100px;
-        font-weight: bold;
+        height: 22px;
+        width: 84px;
         color: #FFF;
         justify-content: center;
+        font-size: 13px;
     }
 
     .p-urgencia-alta {
@@ -1197,9 +1198,9 @@
 
     .div-descricao-detalhada {
         display: flex;
-        max-width: 171px;
+        max-width: 166px;
         background-color: #D9D9D9;
-        padding: 10px;
+        padding: 7px;
         border-radius: 15px;
         height: 100px;
     }
@@ -1209,8 +1210,8 @@
     }
 
     .p-descricao {
-        margin: 0 1px 2px 10px;
-        font-size: 11.5px;
+        margin: 0 1px 2px 3px;
+        font-size: 10px;
         width: 100%;
         line-height: 15px;
     }
@@ -1221,23 +1222,43 @@
         background-image: url(assets/new.png);
         border: none;
         background-size: cover;
-        background-color: #D9D9D9;
+        background-color: transparent;
         cursor: pointer;
     }
 
     #calendar {
-        max-width: 430px;
-        margin: 40px 6px;
+        max-width: 330px;
+        margin: 25px auto;
         background-color: #FFFF;
         border-radius: 15px;
         padding: 10px;
+    }
+
+    #calendar .fc-button {
+        font-size: 12px;
+        /* Define o tamanho da fonte dos botões */
+        padding: 5px 8px;
+
+    }
+
+    #calendar .fc-header-toolbar {
+        font-size: 14px;
+    }
+
+
+    #calendar .fc-toolbar-title {
+        font-size: 19.5px;
+    }
+
+    .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+        min-height: 1.4em;
     }
 
     .img-logo-home {
         background-image: url(assets/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;    
+        background-position: center;
         height: 100%;
     }
 
@@ -1277,7 +1298,27 @@
         }
     }
 
-    @media (max-width: 595px) {
+
+    @media(max-width: 568px) {
+        .input-pesquisa::placeholder {
+            color: transparent;
+        }
+        .img-perfil {
+            width: 23px;
+            height: 23px;
+        }
+        .p-nome-usuario {
+            font-size: 11px;
+            min-width: 0;
+        }
+        dialog {
+            width: 90%;
+        }
+        .buttons-notificacoes-tarefa button {
+            font-size: 66%;
+            margin: 0 13px 0 14px;
+        }
+
         .img-logo-home {
             background-image: url(assets/icon-logo.png);
         }
@@ -1289,15 +1330,96 @@
             margin: 0 0.7em;
         }
 
-        /* .div-logo-header-home {
-            display: none;
+        .div-informacoes-lembretes {
+            margin-right: 2px;
         }
-        .input-pesquisa{
-            margin-left: 1em;
+
+        .h2-tela-inicial {
+            max-width: 107px;
+            font-size: 11px;
         }
-        .nav-lateral{
-            display: none;
-        }*/
+
+        .h4-prazos,
+        .p-prazos {
+            color: #333333;
+            margin: 3px;
+            font-size: 9px;
+        }
+
+        .div-checkbox {
+            padding: 0 4px;
+        }
+
+        .h4-checkbox {
+            margin: 0px;
+            font-size: 9px;
+        }
+
+        input[type="checkbox"].input-checkbox-finalizado {
+            width: 15px;
+            height: 15px;
+        }
+
+        .link-text-box {
+            margin: 0 3px 5px 0;
+            font-size: 10px;
+            height: 17px;
+        }
+
+        .p-box-prioridade {
+            height: 17px;
+            width: 67px;
+            font-size: 10px;
+        }
+
+        .p-descricao {
+            font-size: 8px;
+            line-height: 13px;
+        }
+
+        .div-descricao-detalhada {
+            max-width: 121px;
+            padding: 4px 6px;
+            height: 78px;
+        }
+
+        .container-lembretes,
+        .container-compromissos {
+            height: 600px;
+        }
+
+        .side-bar.active {
+            position: absolute;
+            top: 4em;
+            z-index: 1;
+            padding-bottom: 2em;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .side-bar {
+            height: auto;
+        }
+
+        .menu-btn {
+            font-size: 19px;
+            margin: 15px;
+        }
+
+        .main-tela-principal.ativa {
+            left: -11.7em;
+        }
+
+        .main-tela-principal {
+            top: 2em;
+        }
+
+        #calendar {
+            max-width: 256px;
+        }
+        .fc-toolbar-chunk{
+            display: flex;
+        }
     }
 
     /*----------------TELA DE APRESENTAÇÃO----------------*/
