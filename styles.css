@@ -660,6 +660,7 @@
     .select-inputs-tarefa {
         width: 15em;
         text-align: start;
+        padding: 4px 0 0 10px;
     }
 
     .div-button-nova-tarefa {
@@ -1072,10 +1073,42 @@
         text-align: center;
     }
 
+    /*Modal Exclusão*/
+    .dialog-exclusao .p-email-recuperacao {
+        max-width: 252px;
+        font-weight: bold;
+        font-size: 23px;
+        margin: 50px 0;
+
+    }
+
+    .dialog-exclusao button {
+        background-color: #0A3950;
+        border: none;
+        border-radius: 25px;
+        width: 125px;
+        height: 35px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    .dialog-exclusao .div-texto {
+        justify-content: space-evenly;
+        padding-top: 15px;
+    }
+
+    .dialog-exclusao button:last-of-type {
+        background-color: #87898A;
+    }
+
+    .dialog-exclusao button:hover {
+        opacity: 50%;
+    }
 
 
-
-
+    /**/
     .main-tela-principal {
         display: flex;
         flex-wrap: wrap;
@@ -1118,7 +1151,7 @@
     .div-interna-container-lembretes {
         background-color: #FFFFFF;
         border-radius: 17px;
-        padding: 8px;
+        padding: 8px 4px;
         display: flex;
         margin-bottom: 10px;
     }
@@ -1216,6 +1249,18 @@
         font-size: 10px;
         width: 100%;
         line-height: 15px;
+    }
+
+    .div-editar-excluir {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div-editar-excluir i {
+        margin-left: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
     }
 
     .button-new {
@@ -1427,6 +1472,10 @@
         .fc-toolbar-chunk {
             display: flex;
         }
+
+        .fc .fc-col-header-cell-cushion {
+            font-size: 11.5px;
+        }
     }
 
     /*----------------TELA DE APRESENTAÇÃO----------------*/
@@ -1626,7 +1675,7 @@
         margin: 40px 10px 0 10px;
     }
 
-    .container-notificacoes .div-todas-informacoes{
+    .container-notificacoes .div-todas-informacoes {
         justify-content: space-evenly;
     }
 
@@ -1641,60 +1690,60 @@
         background-color: #f8f8f8;
         padding: 10px 0;
         box-shadow: inset 0px 4px 4px #00000040;
-      }
-      
-      .container-footer {
+    }
+
+    .container-footer {
         max-width: 1200px;
         margin: 0 auto;
-      }
-      
-      .footer-top {
+    }
+
+    .footer-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
+    }
 
-      .footer-logo{
+    .footer-logo {
         margin: 5px;
-      }
-      
-      .footer-logo img {
+    }
+
+    .footer-logo img {
         width: 100px;
-      }
-      
-      .footer-links ul {
+    }
+
+    .footer-links ul {
         list-style: none;
         margin: 0;
         padding: 0;
-      }
-      
-      .footer-links li {
+    }
+
+    .footer-links li {
         display: inline-block;
         margin-right: 20px;
-      }
-      
-      .footer-links a {
+    }
+
+    .footer-links a {
         text-decoration: none;
         color: #777;
         font-size: 14px;
         transition: color 0.3s ease;
         font-weight: bold;
-      }
-      
-      .footer-links a:hover {
+    }
+
+    .footer-links a:hover {
         color: #1F2B49;
-      }
-      
-      .footer-bottom {
+    }
+
+    .footer-bottom {
         text-align: center;
-      }
-      
-      .footer-bottom p {
+    }
+
+    .footer-bottom p {
         font-size: 12px;
         color: #777;
         margin: 0;
-      }
-      
+    }
+
 
     @media (max-width: 993px) {
         .div-informacoes-left-right:first-child {
@@ -1735,14 +1784,35 @@
         background-color: #D9D9D9;
         display: flex;
         border-radius: 25px;
-        padding: 1em;
-        margin: 1em;
+        padding: 20px 5px;
+        margin: 30px 5px 100px 5px;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 1150px;
+    }
+
+    .sub-container-hoje-principal {
+        margin-bottom: 40px;
     }
 
     .h5-nome-tarefa-hoje {
         text-align: left;
+        font-size: 15px;
+    }
+
+    .p-tarefa-hoje {
+        font-size: 14px;
+    }
+
+    .container-hoje .p-box-categorias,
+    .link-prioridade-urgencia {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container-hoje .p-descricao-detalhada {
+        max-width: 121px;
+        font-size: 13px;
     }
 
     .container-hoje {
@@ -1750,8 +1820,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1em;
     }
+
+    .container-hoje-meio {
+        margin: 0 5px;
+    }
+
 
     .container-hoje .p-box-prioridade {
         height: 44px;
@@ -1767,7 +1841,39 @@
     .div-container-hoje-tarefas {
         height: 90%;
         background-color: #A8A3A3;
-        padding: 1em;
-        margin: 1em;
-        border-radius: 37px
+        padding: 10px 5px;
+        margin: 0;
+        border-radius: 25px;
+        min-height: 300px;
+        max-height: 534px;
+        overflow-y: scroll;
+    }
+
+    .div-container-hoje-tarefas::-webkit-scrollbar {
+        width: 10px;
+        /* Largura do scroll */
+    }
+
+    .div-container-hoje-tarefas::-webkit-scrollbar-thumb {
+        background-color: #888;
+        /* Cor do scroll */
+    }
+
+    .div-container-hoje-tarefas::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        /* Cor de fundo do scroll */
+    }
+
+    .container-hoje .div-descricao-boxs-tarefa {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-hoje .div-nome-prazo {
+        padding: 2px 2px 0 0;
+        margin: 0;
+    }
+
+    .container-hoje .div-interna-container-lembretes {
+        padding-top: 15px;
     }

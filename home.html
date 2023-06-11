@@ -35,10 +35,10 @@
         <div class="div-buttons">
             <input class="inputs input-pesquisa" type="text" placeholder="PESQUISAR">
             <div class="div-buttons-modal">
-            <button class="button-login button-login-home button-adicionar"></button>
-            <button class="button-login button-login-home button-aviso"></button>
-            <button class="button-login button-login-home button-desempenho"></button>
-        </div>
+                <button class="button-login button-login-home button-adicionar"></button>
+                <button class="button-login button-login-home button-aviso"></button>
+                <button class="button-login button-login-home button-desempenho"></button>
+            </div>
         </div>
 
         <div class="div-perfil">
@@ -70,7 +70,7 @@
                         <div class="item"><a href="#"><i class="fas fa-book"></i>ESTUDO</a></div>
                         <div class="item"><a href="#"><i class="fas fa-shopping-cart"></i>COMPRAS</a></div>
                         <div class="item"><a href="#"><i class="far fa-calendar-alt"></i>AGENDA</a></div>
-                    
+
                         <div class="borda"></div>
                         <div class="item">
                             <a class="sub-btn"><i class="fa fa-gears"></i>OPÇÕES<i
@@ -120,6 +120,10 @@
                                 SOBRE AS TAREFAS REALIZADAS DA SPRINT.</p>
                         </div>
                     </div>
+                    <div class="div-editar-excluir">
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
                 </div>
 
                 <div class="div-interna-container-lembretes">
@@ -156,6 +160,10 @@
                             <p class="p-descricao">APRESENTAÇÃO DO SEMÍNARIO, SOBRE LOCAL STORAGE (NAVEGADORES).</p>
                         </div>
                     </div>
+                    <div class="div-editar-excluir">
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
                 </div>
 
                 <div class="div-interna-container-lembretes">
@@ -191,6 +199,10 @@
                             <p class="p-descricao">CONFERIR SE A MOTO ESTÁ
                                 EM FUNCIONANDO PERFEITAMENTE ANTES DE IR..</p>
                         </div>
+                    </div>
+                    <div class="div-editar-excluir">
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-pencil-alt"></i>
                     </div>
                 </div>
                 <button class="button-new"></button>
@@ -253,18 +265,15 @@
                     <select class="select-inputs" name="categoria" id="categoria">
                         <option value="estudo">ESTUDO </option>
                         <option value="compras">COMPRAS </option>
-                        <option value="viagens">VIAGENS </option>
-                        <option value="saude">SAÚDE </option>
                         <option value="agenda">AGENDA</option>
                     </select>
-
                 </div>
                 <div class="div-importancia informacoes-inputs">
                     <h4 class="h4-infomacoes-inputs">IMPORTÂNCIA</h4>
                     <select class="select-inputs" name="importancia" id="importancia">
-                        <option value="urgente">URGENTE </option>
-                        <option value="regular">REGULAR </option>
-                        <option value="pouco-urgente">POUCO URGENTE </option>
+                        <option value="urgente">URGENTE</option>
+                        <option value="regular">REGULAR</option>
+                        <option value="pouco-urgente">BAIXA</option>
                     </select>
                 </div>
                 <div class="div-inicio informacoes-inputs">
@@ -281,11 +290,11 @@
                 <div class="div-conclusao informacoes-inputs">
                     <div class="div-inicio-conclusao-horario">
                         <h4 class="h4-infomacoes-inputs">CONCLUSÃO</h4>
-                    <input class="select-inputs" type="date">
+                        <input class="select-inputs" type="date">
                     </div>
                     <div class="div-inicio-conclusao-horario">
                         <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
-                    <input class="select-inputs" type="time">   
+                        <input class="select-inputs" type="time">
                     </div>
                 </div>
                 <div class="div-descricao-tarefa informacoes-inputs">
@@ -296,70 +305,6 @@
                     <button type="submit" class="button-criar-tarefa">CRIAR TAREFA</button>
                 </div>
             </form>
-        </div>
-    </dialog>
-
-    <!--Modal Exclusão-->
-    <dialog class="dialog-exclusao">
-        <div class="div-h2-tarefa">
-            <h2 class="h2-adicionar-tarefa">EXCLUIR TAREFA</h2>
-            <div class="buttons-notificacoes-tarefa">
-                <span class="fas fa-square">
-                    <i class="fas fa-check-square"></i>
-                </span>
-                <button>EXCLUIR TODAS</button>
-                <div class="div-button-exit">
-                    <i class="fa fa-close"></i>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="container-notificacoes-modal">
-            <div class="continer-detalhes-notificacoes">
-                <form action="">
-                    <label class="checkbox-container">
-                        <input type="checkbox">
-                        <span class="checkmark">
-                            <span class="content-check"></span>
-                        </span>
-                    </label>
-                </form>
-                <div class="container-todas-informacoes-tarefas">
-                    <div class="div-todas-informacoes-tarefas">
-                        <div class="div-nome-prazo">
-                            <h5 class="h5-nome-tarefa">Vistoria Veícular</h5>
-                            <div class="informacoes-tarefas-prazo">
-                                <p class="p-prazo-tarefa">Prazo:</p>
-                                <p class="p-data-tarefa">28/04/2023</p>
-                            </div>
-                            <div class="informacoes-tarefas-prazo">
-                                <p class="p-prazo-tarefa">Horário Inicial:</p>
-                                <p class="p-data-tarefa">13:00</p>
-                            </div>
-                            <div class="informacoes-tarefas-prazo">
-                                <p class="p-prazo-tarefa">Horário Final:</p>
-                                <p class="p-data-tarefa">18:00</p>
-                            </div>
-                        </div>
-                        <div class="div-descricao-boxs-tarefa">
-                            <div class="div-boxs-tarefa">
-                                <p class="p-box-categorias">Agenda</p>
-                                <a class="link-prioridade-urgencia" href="#">Urgência</a>
-                            </div>
-                            <div class="div-descricao-detalhada-tarefa">
-                                <i class="fas fa-envelope-open-text"></i>
-                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando perfeitamente
-                                    antes de ir.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div-link-tarefa">
-                        <p class="p-dia-tarefa">Chegou o Dia Do(a):</p>
-                        <p class="p-nome-tarefa">Vistoria Veícular</p>
-                        <a class="link-ir-terefa" href="#">Ir á Tarefa</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </dialog>
 
@@ -459,20 +404,41 @@
                     <p class="p-box-prioridade p-urgencia-alta">URGENTE</p>
                     <p class="p-informacoes-desempenho">2 TAFEFAS FEITAS</p>
                     <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
-                    <p class="p-informacoes-desempenho">50% <span class="p-informacoes-desempenho-porcentagem">CONCLUÍDOS</span></p>
+                    <p class="p-informacoes-desempenho">50% <span
+                            class="p-informacoes-desempenho-porcentagem">CONCLUÍDOS</span></p>
                 </div>
                 <div class="div-porcentagem-redimento-detalhada">
                     <p class="p-box-prioridade p-urgencia-media">REGULAR</p>
                     <p class="p-informacoes-desempenho">3 TAFEFAS FEITAS</p>
                     <p class="p-informacoes-desempenho">0 TAFEFAS À FAZER</p>
-                    <p class="p-informacoes-desempenho">100% <span class="p-informacoes-desempenho-porcentagem"> CONCLUÍDOS</span></p>
+                    <p class="p-informacoes-desempenho">100% <span class="p-informacoes-desempenho-porcentagem">
+                            CONCLUÍDOS</span></p>
                 </div>
                 <div class="div-porcentagem-redimento-detalhada">
                     <p class="p-box-prioridade p-urgencia-baixa">POUCO URGENTE</p>
                     <p class="p-informacoes-desempenho">1 TAFEFAS FEITAS</p>
                     <p class="p-informacoes-desempenho">2 TAFEFAS À FAZER</p>
-                    <p class="p-informacoes-desempenho">33% <span class="p-informacoes-desempenho-porcentagem">CONCLUÍDOS</span></p>
+                    <p class="p-informacoes-desempenho">33% <span
+                            class="p-informacoes-desempenho-porcentagem">CONCLUÍDOS</span></p>
                 </div>
+            </div>
+        </div>
+    </dialog>
+    <!--Modal de Excluir tarefas-->
+    <dialog class="dialog-exclusao">
+        <div class="form-login div-recuperacao-senha">
+            <div class="div-logo div-logo-recuperacao">
+                <a href="index.html">
+                    <img class="img-logo img-logo-recuperacao" src="assets/logo.png" alt="logo-lifeTidy">
+                </a>
+            </div>
+            <h2 class="h2-cadastro h2-cadastro-recuperacao"></h2>
+
+            <p class="p-email-recuperacao">DESEJA REALMENTE EXCLUIR A TAREFA</p>
+
+            <div class="div-texto">
+                <button class="buttons-exclusao-nao" >NÃO</button>
+                <button class="buttons-exclusao-sim" >SIM</button>
             </div>
         </div>
     </dialog>

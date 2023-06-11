@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         end: '2023-06-10',
         color: '#1B0BD7',
       },
-      
+
     ],
     editable: true,
     selectable: true,
@@ -61,27 +61,52 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //Modal de Tarefa
   const buttonNew = document.querySelector(".button-adicionar")
+  const buttonNewTarefa = document.querySelectorAll(".button-new")
+  const buttonEdit = document.querySelectorAll(".fa-pencil-alt")
   const modalTarefa = document.querySelector(".dialog-tarefa")
   const closeTarefa = document.querySelector(".div-button-exit i")
 
-  buttonNew.onclick = function () {
+  function openModal() {
     modalTarefa.showModal()
   }
+  
+  buttonNew.onclick = openModal;
+  buttonNewTarefa.forEach(function(button) { //Qualquer button.new clicado, abrirá o Modal Tarefa
+    button.onclick = openModal;
+  });
+  buttonEdit.forEach(function(button) { //Qualquer fa-pencil-alt clicado, abrirá o Modal Tarefa
+    button.onclick = openModal;
+  });
+  
+
+
   closeTarefa.onclick = function () {
     modalTarefa.close()
   }
 
   /* MODAL DE EXCLUSÃO */
-  /*const buttonExlusao = document.querySelector(".button-apagar")
+  const buttonExlusao = document.querySelectorAll(".fa-trash")
   const modalExclusao = document.querySelector(".dialog-exclusao")
-  const closeExclusao = modalExclusao.querySelector(".div-button-exit i")
+  const closeExclusao = modalExclusao.querySelector(".buttons-exclusao-nao")
 
-  buttonExlusao.onclick = function () {
+
+  function openModalExclusao() {
     modalExclusao.showModal()
   }
+
+  buttonExlusao.forEach(function(button) { //Qualquer fa-trash clicado, abrirá o Modal Exclusão
+    button.onclick = openModalExclusao;
+  });
+
   closeExclusao.onclick = function () {
     modalExclusao.close()
-  }*/
+  }
+
+  const buttonConfirmacaoExclusao = document.querySelector(".buttons-exclusao-sim");
+
+buttonConfirmacaoExclusao.addEventListener("click", function() {
+  alert("Função em Desenvolvimento");
+});
 
   /* MODAL DE NOTIFICAÇÕES */
   const buttonNotificacoes = document.querySelector(".button-aviso")
