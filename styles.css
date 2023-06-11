@@ -1835,6 +1835,7 @@
         min-height: 300px;
         max-height: 534px;
         overflow-y: scroll;
+        min-width: 300px;
     }
 
     .div-container-hoje-tarefas::-webkit-scrollbar {
@@ -1864,4 +1865,24 @@
 
     .container-hoje .div-interna-container-lembretes {
         padding-top: 15px;
+    }
+
+    /*TELA SEMANA*/
+
+    .p-data-semana{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .div-sem-tarefas{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-sem-tarefas h3{
+        font-size: 26px;
+        color: #333;
     }
