@@ -280,8 +280,34 @@
     /*----------------------------CONTA CRIADA--------------------------------*/
 
     .main-contaCriada .p-contaCriada{
-        font-size: 16px;
-        
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .main-contaCriada .h2-cadastro{
+        margin-top: 8px;
+    }
+    .main-contaCriada .div-logo-recuperacao{
+        padding: 0;
+    }
+    .main-contaCriada .img-logo-recuperacao{
+        width: 36%;
+    }
+
+    .main-contaCriada a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-contaCriada .h2-parabens{
+        margin: 12px 0 8px 0;
+    }
+    .main-contaCriada .container-informacoes-concluidas-modal{
+        margin-top: 10px;
+    }
+
+    .main-contaCriada .link-button-voltar {
+        width: 120px;
+        margin-top: 18px;
     }
 
     /*---------------------------RECUPERAR SENHA------------------------------*/
