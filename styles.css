@@ -591,7 +591,6 @@
 
 
     dialog {
-        width: 60%;
         border: none;
         background-color: transparent;
         border-radius: 25px;
@@ -646,6 +645,7 @@
         padding-bottom: 2em;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        padding-right: 10px;
     }
 
     .informacoes-inputs {
@@ -1361,42 +1361,42 @@
     }
 
     @media (min-width: 1200px) {
-        .h2-tela-inicial {
+        .main-tela-principal-home .h2-tela-inicial {
             max-width: 155px;
             font-size: 17px;
         }
 
-        .h4-prazos,
+        .main-tela-principal-home .h4-prazos,
         .p-prazos {
             font-size: 15px;
         }
 
-        .h4-checkbox {
+        .main-tela-principal-home .h4-checkbox {
             font-size: 15px;
         }
 
-        .p-descricao {
+        .main-tela-principal-home .p-descricao {
             margin: 0 2px 2px 4px;
             font-size: 13px;
         }
 
-        .div-descricao-detalhada {
+        .main-tela-principal-home .div-descricao-detalhada {
             max-width: 188px;
         }
 
-        .p-box-prioridade {
+        .main-tela-principal-home .p-box-prioridade {
             height: 24px;
             width: 89px;
             font-size: 15px;
         }
 
-        .link-text-box {
+        .main-tela-principal-home .link-text-box {
             padding: 3px 8px;
             font-size: 15px;
             height: 24px;
         }
 
-        .div-interna-container-lembretes {
+        .main-tela-principal-home .div-interna-container-lembretes {
             padding: 10px 14px
         }
 
@@ -2005,8 +2005,19 @@
         margin: 0;
     }
 
-    .container-hoje .div-interna-container-lembretes {
-        padding-top: 15px;
+    .main-principal-hoje .div-interna-container-lembretes {
+        padding: 15px 4px 8px 4px;
+
+    }
+
+    .main-principal-hoje .div-editar-excluir i {
+        margin-left: 2px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .main-principal-hoje .div-descricao-detalhada-tarefa{
+        padding: 5px 2px;   
     }
 
     /*TELA SEMANA*/
