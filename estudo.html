@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div class="main-principal main-principal-hoje">
+    <div class="main-principal">
         <div class="div-lateral">
             <nav class="nav-lateral">
                 <div class="menu-btn">
@@ -67,8 +67,8 @@
                         <div class="item "><a href="semana.html"><i class="far fa-calendar-minus"></i>SEMANA</a></div>
                         <div class="borda"></div>
 
-                        <div class="item"><a href="estudo.html"><i class="fas fa-book"></i>ESTUDO</a></div>
-                        <div class="item"><a href="compras.html"><i class="fas fa-shopping-cart"></i>COMPRAS</a></div>
+                        <div class="item"><a href="#"><i class="fas fa-book"></i>ESTUDO</a></div>
+                        <div class="item"><a href="#"><i class="fas fa-shopping-cart"></i>COMPRAS</a></div>
                         <div class="item"><a href="#"><i class="far fa-calendar-alt"></i>AGENDA</a></div>
 
                         <div class="borda"></div>
@@ -86,13 +86,23 @@
 
         <div id="calendar" style="display:none"></div>
         <main class="main-tela-principal">
-            <div class="container-hoje-principal">
+
+            <div class="div-container-buttons-adicao">
+                <a class="links-buttons-adicao"><i class="fas fa-plus"></i> ADICIONAR MARCADOR</a>
+                <a class="links-buttons-adicao"><i class="fa fa-th-list"></i></i> TODOS OS MARCADORES</a>
+            </div>
+
+            <div class="container-hoje-principal"> 
                 <div class="sub-container-hoje-principal">
                     <div class="container-hoje">
-                        <p class="p-box-prioridade p-urgencia-alta">URGENTE</p>
+                        <div class="div-icone-nomes-lista">
+                            <img src="assets/ic_twotone-all-out.png" alt="">
+                            <h3>ATIVIDADES DE PW</h3>
+                            <i class="fas fa-trash"></i>
+                        </div>                   
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
-
+                            <button class="button-new"></button>
                             <div class="div-interna-container-pai-lembretes">
                                 <div class="div-interna-container-lembretes">
                                     <div class="div-todas-informacoes-tarefas">
@@ -100,7 +110,7 @@
                                             <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
+                                                <p class="p-data-tarefa p-tarefa-hoje">13/06/2023</p>
                                             </div>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
@@ -133,11 +143,11 @@
                             <div class="div-interna-container-pai-lembretes">
                                 <div class="div-interna-container-lembretes">
                                     <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo ">
+                                        <div class="div-nome-prazo">
                                             <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
+                                                <p class="p-data-tarefa p-tarefa-hoje">13/06/2023</p>
                                             </div>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
@@ -151,7 +161,8 @@
                                         <div class="div-descricao-boxs-tarefa">
                                             <div class="div-boxs-tarefa">
                                                 <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia" href="#">Urgência</a>
+                                                <a class="link-prioridade-urgencia p-urgencia-media"
+                                                    href="#">Urgência</a>
                                             </div>
                                             <div class="div-descricao-detalhada-tarefa">
                                                 <i class="fas fa-envelope-open-text"></i>
@@ -169,20 +180,25 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="sub-container-hoje-principal">
                     <div class="container-hoje container-hoje-meio">
-                        <p class="p-box-prioridade p-urgencia-media">REGULAR</p>
+                        <div class="div-icone-nomes-lista">
+                            <img src="assets/ic_twotone-all-out.png" alt="">
+                            <h3>ATIVIDADES DE SO</h3>
+                            <i class="fas fa-trash"></i>
+                        </div>                   
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
-
+                            <button class="button-new"></button>
                             <div class="div-interna-container-pai-lembretes">
                                 <div class="div-interna-container-lembretes">
                                     <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
+                                        <div class="div-nome-prazo ">
                                             <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
+                                                <p class="p-data-tarefa p-tarefa-hoje">13/06/2023</p>
                                             </div>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
@@ -196,8 +212,7 @@
                                         <div class="div-descricao-boxs-tarefa">
                                             <div class="div-boxs-tarefa">
                                                 <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-media"
-                                                    href="#">Urgência</a>
+                                                <a class="link-prioridade-urgencia" href="#">Urgência</a>
                                             </div>
                                             <div class="div-descricao-detalhada-tarefa">
                                                 <i class="fas fa-envelope-open-text"></i>
@@ -220,121 +235,7 @@
                                             <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-media"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                            </div>
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-media"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                            </div>
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-media"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                            </div>
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
+                                                <p class="p-data-tarefa p-tarefa-hoje">13/06/2023</p>
                                             </div>
                                             <div class="informacoes-tarefas-prazo">
                                                 <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
@@ -366,126 +267,21 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div class="sub-container-hoje-principal">
                     <div class="container-hoje">
-                        <p class="p-box-prioridade p-urgencia-baixa">BAIXA</p>
+                        <div class="div-icone-nomes-lista div-icone-nomes-lista-ultimo">
+                            <img src="assets/ic_twotone-all-out (1).png" alt="">
+                            <h3>SEM MARCADOR</h3>
+                            <i class="fas fa-trash"></i>
+                            
+                        </div>                   
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-baixa"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                            </div>
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-baixa"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                            </div>
-
-                            <div class="div-interna-container-pai-lembretes">
-                                <div class="div-interna-container-lembretes">
-                                    <div class="div-todas-informacoes-tarefas">
-                                        <div class="div-nome-prazo">
-                                            <h5 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h5>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Prazo:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">28/04/2023</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Inicial:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">13:00</p>
-                                            </div>
-                                            <div class="informacoes-tarefas-prazo">
-                                                <p class="p-prazo-tarefa p-tarefa-hoje">Horário Final:</p>
-                                                <p class="p-data-tarefa p-tarefa-hoje">18:00</p>
-                                            </div>
-                                        </div>
-                                        <div class="div-descricao-boxs-tarefa">
-                                            <div class="div-boxs-tarefa">
-                                                <p class="p-box-categorias">Agenda</p>
-                                                <a class="link-prioridade-urgencia p-urgencia-baixa"
-                                                    href="#">Urgência</a>
-                                            </div>
-                                            <div class="div-descricao-detalhada-tarefa">
-                                                <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Conferir se a moto está em funcionando
-                                                    perfeitamente antes de ir. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="div-editar-excluir">
-                                    <i class="fas fa-trash"></i>
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
+                            <div class="div-sem-tarefas">
+                                <h3>SEM TAREFAS</h3>
                             </div>
                         </div>
                     </div>

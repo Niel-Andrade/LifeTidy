@@ -2016,8 +2016,8 @@
         font-size: 15px;
     }
 
-    .main-principal-hoje .div-descricao-detalhada-tarefa{
-        padding: 5px 2px;   
+    .main-principal-hoje .div-descricao-detalhada-tarefa {
+        padding: 5px 2px;
     }
 
     /*TELA SEMANA*/
@@ -2038,4 +2038,58 @@
     .div-sem-tarefas h3 {
         font-size: 26px;
         color: #333;
+    }
+
+    /*ESTUDOS*/
+    .div-container-buttons-adicao {
+        background-color: #EEEAEA;
+        width: 97%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2em 0;
+        max-height: 9em;
+    }
+
+    .links-buttons-adicao {
+        background-color: #D9D9D9;
+        font-weight: bold;
+        font-size: 15px;
+        height: 48px;
+        width: 255px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0px 2px 4px #00000033;
+
+
+    }
+
+    .links-buttons-adicao i {
+        padding-right: 9px;
+    }
+
+    .div-icone-nomes-lista {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-icone-nomes-lista i {
+        cursor: pointer;
+        font-size: 19px;
+    }
+
+    .div-container-hoje-tarefas .button-new {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .div-icone-nomes-lista-ultimo i,
+    .div-icone-nomes-lista-ultimo h3 {
+        color: #777;
     }
