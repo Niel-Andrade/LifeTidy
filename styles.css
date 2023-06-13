@@ -277,6 +277,13 @@
         }
     }
 
+    /*----------------------------CONTA CRIADA--------------------------------*/
+
+    .main-contaCriada .p-contaCriada{
+        font-size: 16px;
+        
+    }
+
     /*---------------------------RECUPERAR SENHA------------------------------*/
 
     .input-email-recuperacao {
