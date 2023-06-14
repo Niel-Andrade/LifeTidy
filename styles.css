@@ -2117,3 +2117,66 @@
             padding: 0 5px;
         }
     }
+
+    /*Compras*/
+    .main-principal-compras .div-icone-nomes-lista-ultimo{
+        opacity: 0;
+    }
+    .main-principal-compras .fa-trash, .main-principal-compras .fa-pencil-alt{
+        color: #777;
+    }
+
+    .main-principal-compras .div-container-hoje-tarefas {
+        padding: 10px;
+        overflow-y: auto;
+    }
+    .div-container-withe{
+        background-color: #FFF;
+        height: 95%;
+        border-radius: 18px;
+        margin: 0 5px;
+        
+            padding: 10px 5px;
+            margin: 0;
+            border-radius: 25px;
+            min-height: 300px;
+            max-height: 534px;
+            overflow-y: scroll;
+            min-width: 300px;
+        }
+
+    .main-principal-compras .button-new{
+        margin: 0px 0 10px 8px;
+    }
+    .div-lista{
+        display: flex;
+        align-items: center;
+    }
+    .checkbox-lista{
+        margin-right: 6px;
+        width: 20px;
+        height: 17px;
+    }
+
+    .div-lista p{
+        font-size: 17px;
+        font-weight: bold;
+        border-bottom: 1px solid #000;
+        margin: 8px 0;
+    }
+    .div-lista p:first-of-type{
+        border-right: 2px solid #000;
+        padding-right: 8px;
+    }
+
+    .div-lista p:last-of-type{
+        padding-left:  8px;
+        min-width: 62%;
+        max-width: 62%;
+    }
+
+    .div-lista i{
+        font-size: 22px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
