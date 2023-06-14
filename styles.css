@@ -179,10 +179,6 @@
         background-image: url(assets/user.png);
     }
 
-    .input-data {
-        background-image: url(assets/calendario.png);
-    }
-
     .aside-cadastro {
         margin: 2em 4em 4em 0;
         display: flex;
