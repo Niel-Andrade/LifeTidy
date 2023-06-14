@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  
+//Pesquisa
+
+const filterElement = document.querySelector('header input')
+
+const tarefas = document.querySelectorAll(".div-interna-container-pai-lembretes")
+
+filterElement.addEventListener('input', filterTarefas)
+
+function filterTarefas(){
+  if(filterElement.value != ''){
+
+    for (let tarefa of tarefas){
+      let title = tarefa.querySelector('h2')
+      title = title.textContent.toLowerCase()
+      
+      let filterText = filterElement.value.toLowerCase()
+      if(!title.includes(filterText)){
+        tarefa.style.display = "none"
+      }else{
+        tarefa.style.display = "flex"
+      }  
+    }
+
+  }else{
+    for (let tarefa of tarefas){
+      tarefa.style.display = "flex"
+    }
+  }
+}
+
   //Calendario
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {

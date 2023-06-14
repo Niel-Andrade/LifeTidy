@@ -271,6 +271,12 @@
         .inputs::placeholder {
             font-size: 13px;
         }
+
+        .container-hoje .div-nome-prazo {
+            padding: 0;
+            margin: 0;
+        }
+
     }
 
     /*----------------------------CONTA CRIADA--------------------------------*/
@@ -479,7 +485,7 @@
         align-items: center;
     }
 
-    .sub-menu-header a{
+    .sub-menu-header a {
         text-decoration: none;
         color: #000000;
         padding: 0 0 13px 0;
@@ -1150,6 +1156,7 @@
         border-radius: 15px;
         margin: 10px 5px;
         height: 730px;
+        min-width: 346px;
     }
 
     .container-compromissos {
@@ -1519,6 +1526,7 @@
         .container-lembretes,
         .container-compromissos {
             height: 600px;
+            min-width: 297px;
         }
 
         .side-bar.active {
@@ -1540,11 +1548,13 @@
         }
 
         .main-tela-principal.ativa {
-            left: -10.5em;
+            left: -12em;
+            min-width: 100%;
         }
 
         .main-tela-principal {
-            top: 2em;
+            top: 3em;
+            transition: none;
         }
 
         #calendar {
@@ -1558,6 +1568,7 @@
         .fc .fc-col-header-cell-cushion {
             font-size: 11.5px;
         }
+
     }
 
     /*----------------TELA DE APRESENTAÇÃO----------------*/
@@ -1919,6 +1930,7 @@
     .h5-nome-tarefa-hoje {
         text-align: left;
         font-size: 15px;
+        max-width: 130px;
     }
 
     .p-tarefa-hoje {
@@ -2083,4 +2095,25 @@
     .div-icone-nomes-lista-ultimo i,
     .div-icone-nomes-lista-ultimo h3 {
         color: #777;
+    }
+
+    @media(max-width: 568px) {
+        .div-container-buttons-adicao {
+            width: 79%;
+            padding: 4em 1em 2em 1em;
+            top: -48px;
+            position: relative;
+        }
+
+        .container-hoje .div-nome-prazo {
+            padding: 0;
+            margin: 0;
+        }
+
+        .links-buttons-adicao {
+            font-size: 10px;
+            height: 37px;
+            width: 105px;
+            padding: 0 5px;
+        }
     }
