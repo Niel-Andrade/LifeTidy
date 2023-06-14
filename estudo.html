@@ -84,18 +84,18 @@
         <main class="main-tela-principal">
 
             <div class="div-container-buttons-adicao">
-                <a class="links-buttons-adicao"><i class="fas fa-plus"></i> ADICIONAR MARCADOR</a>
+                <a class="links-buttons-adicao links-buttons-adicao-marcador"><i class="fas fa-plus"></i> ADICIONAR MARCADOR</a>
                 <a class="links-buttons-adicao"><i class="fa fa-th-list"></i></i> TODOS OS MARCADORES</a>
             </div>
 
-            <div class="container-hoje-principal"> 
+            <div class="container-hoje-principal">
                 <div class="sub-container-hoje-principal">
                     <div class="container-hoje">
                         <div class="div-icone-nomes-lista">
                             <img src="assets/ic_twotone-all-out.png" alt="">
                             <h3>ATIVIDADES DE PW</h3>
                             <i class="fas fa-trash"></i>
-                        </div>                   
+                        </div>
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
                             <button class="button-new"></button>
@@ -124,7 +124,8 @@
                                             </div>
                                             <div class="div-descricao-detalhada-tarefa">
                                                 <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Terminar implementações e testar possives bugs.</p>
+                                                <p class="p-descricao-detalhada">Terminar implementações e testar
+                                                    possives bugs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +162,8 @@
                                             </div>
                                             <div class="div-descricao-detalhada-tarefa">
                                                 <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Terminar implementações e testar possives bugs.</p>
+                                                <p class="p-descricao-detalhada">Terminar implementações e testar
+                                                    possives bugs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +200,8 @@
                                             </div>
                                             <div class="div-descricao-detalhada-tarefa">
                                                 <i class="fas fa-envelope-open-text"></i>
-                                                <p class="p-descricao-detalhada">Terminar implementações e testar possives bugs.</p>
+                                                <p class="p-descricao-detalhada">Terminar implementações e testar
+                                                    possives bugs.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -218,7 +221,7 @@
                             <img src="assets/ic_twotone-all-out.png" alt="">
                             <h3>ATIVIDADES DE SO</h3>
                             <i class="fas fa-trash"></i>
-                        </div>                   
+                        </div>
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
                             <button class="button-new"></button>
@@ -261,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div class="sub-container-hoje-principal">
@@ -269,8 +272,8 @@
                         <div class="div-icone-nomes-lista div-icone-nomes-lista-ultimo">
                             <img src="assets/ic_twotone-all-out (1).png" alt="">
                             <h3>SEM MARCADOR</h3>
-                            <i class="fas fa-trash"></i>                
-                        </div>                   
+                            <i class="fas fa-trash"></i>
+                        </div>
                         <div class="div-borda-redimento"></div>
                         <div class="div-container-hoje-tarefas">
                             <div class="div-sem-tarefas">
@@ -471,6 +474,64 @@
                 <button class="buttons-exclusao-nao">NÃO</button>
                 <button class="buttons-exclusao-sim">SIM</button>
             </div>
+        </div>
+    </dialog>
+    <!--Modal Nova Marcador -->
+    <dialog class="dialog-add-marcador">
+        <div class="div-adicionar-tarefa">
+            <div class="div-h2-tarefa">
+                <h2 class="h2-adicionar-tarefa">ADICIONAR TAREFA</h2>
+                <div class="div-button-exit">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <form class="div-detalhes-tarefas">
+                <div class="div-descricao-tarefa informacoes-inputs">
+                    <h4 class="h4-infomacoes-inputs">TITULO</h4>
+                    <textarea placeholder="Ex: Atividade Pedentes" class="select-inputs  select-inputs-tarefa"
+                        type="text"></textarea>
+                </div>
+                <div class="div-descricao-tarefa informacoes-inputs">
+                    <h4 class="h4-infomacoes-inputs">TAREFAS</h4>
+                    <div class="div-tarefas-marcadores">
+                        <button class="button-new"></button>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
+                                <a class="link-prioridade-urgencia" href="#">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
+                                <a class="link-prioridade-urgencia p-urgencia-media" href="#">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
+                                <a class="link-prioridade-urgencia p-urgencia-baixa" href="#">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-conclusao informacoes-inputs">
+                    <div class="div-inicio-conclusao-horario">
+                        <h4 class="h4-infomacoes-inputs">CONCLUSÃO</h4>
+                        <input class="select-inputs" type="date">
+                    </div>
+                    <div class="div-inicio-conclusao-horario">
+                        <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
+                        <input class="select-inputs" type="time">
+                    </div>
+                </div>
+                <div class="div-button-nova-tarefa">
+                    <button type="submit" class="button-criar-tarefa">CRIAR MARCADOR</button>
+                </div>
+            </form>
         </div>
     </dialog>
 </body>

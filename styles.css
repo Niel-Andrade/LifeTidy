@@ -1911,6 +1911,10 @@
 
     /*Tela-Hoje*/
 
+    .main-tela-principal-hoje .container-hoje {
+        align-items: flex-start;
+    }
+
     .container-hoje-principal {
         width: 97%;
         background-color: #D9D9D9;
@@ -2039,8 +2043,9 @@
     }
 
     .div-sem-tarefas h3 {
-        font-size: 26px;
+        font-size: 22px;
         color: #333;
+        opacity: 50%;
     }
 
     /*ESTUDOS*/
@@ -2080,6 +2085,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 1em;
     }
 
     .div-icone-nomes-lista i {
@@ -2095,6 +2101,15 @@
     .div-icone-nomes-lista-ultimo i,
     .div-icone-nomes-lista-ultimo h3 {
         color: #777;
+    }
+
+    .div-icone-nomes-lista h3,
+    .container-hoje .p-data-semana {
+        margin: 0;
+    }
+
+    .container-hoje .div-borda-redimento {
+        margin-top: 0.5em;
     }
 
     @media(max-width: 568px) {
@@ -2119,10 +2134,12 @@
     }
 
     /*Compras*/
-    .main-principal-compras .div-icone-nomes-lista-ultimo{
+    .main-principal-compras .div-icone-nomes-lista-ultimo {
         opacity: 0;
     }
-    .main-principal-compras .fa-trash, .main-principal-compras .fa-pencil-alt{
+
+    .main-principal-compras .fa-trash,
+    .main-principal-compras .fa-pencil-alt {
         color: #777;
     }
 
@@ -2130,53 +2147,102 @@
         padding: 10px;
         overflow-y: auto;
     }
-    .div-container-withe{
+
+    .div-container-withe {
         background-color: #FFF;
         height: 95%;
         border-radius: 18px;
         margin: 0 5px;
-        
-            padding: 10px 5px;
-            margin: 0;
-            border-radius: 25px;
-            min-height: 300px;
-            max-height: 534px;
-            overflow-y: scroll;
-            min-width: 300px;
-        }
+        padding: 10px 5px;
+        margin: 0;
+        border-radius: 25px;
+        min-height: 300px;
+        max-height: 534px;
+        overflow-y: scroll;
+        min-width: 300px;
+    }
 
-    .main-principal-compras .button-new{
+    .main-principal-compras .button-new {
         margin: 0px 0 10px 8px;
     }
-    .div-lista{
+
+    .div-lista {
         display: flex;
         align-items: center;
     }
-    .checkbox-lista{
+
+    .checkbox-lista {
         margin-right: 6px;
         width: 20px;
         height: 17px;
     }
 
-    .div-lista p{
+    .div-lista p {
         font-size: 17px;
         font-weight: bold;
         border-bottom: 1px solid #000;
         margin: 8px 0;
     }
-    .div-lista p:first-of-type{
+
+    .div-lista p:first-of-type {
         border-right: 2px solid #000;
         padding-right: 8px;
     }
 
-    .div-lista p:last-of-type{
-        padding-left:  8px;
+    .div-lista p:last-of-type {
+        padding-left: 8px;
         min-width: 62%;
         max-width: 62%;
     }
 
-    .div-lista i{
+    .div-lista i {
         font-size: 22px;
         margin-left: 8px;
         cursor: pointer;
     }
+
+    /*MODAL ADICIONAR MARCADOR*/
+    .div-tarefas-marcadores {
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        padding: 1em;
+        width: 469px;
+    }
+
+    .div-marcar-tarefas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-marcar-tarefas-borda {
+        display: flex;
+        border-bottom: 1px solid #000;
+        align-items: center;
+    }
+
+    .div-marcar-tarefas h2 {
+        min-width: 185px;
+        padding: 5px;
+        border-right: 1px solid #000;
+        text-align: center;
+    }
+
+    .div-marcar-tarefas a {
+        display: flex;
+        align-items: center;
+        margin: 0 40px;
+        height: 21px;
+    }
+
+    .div-marcar-tarefas i {
+        color: #777;
+        font-size: 22px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .dialog-add-marcador .div-button-nova-tarefa{
+        margin-top: 2em;
+    }
+

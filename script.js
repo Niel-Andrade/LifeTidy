@@ -143,21 +143,16 @@ function filterTarefas(){
     modalExclusao.close()
   }
 
-  //const buttonConfirmacaoExclusao = document.querySelector(".buttons-exclusao-sim");
-
-  // Obtém referências aos elementos
   const btnExclusaoSim = document.querySelector('.buttons-exclusao-sim');
   const divLembretesExcluir = document.querySelector('.div-interna-container-pai-lembretes-excluir');
 
-  // Adiciona um evento de clique ao botão "buttons-exclusao-sim"
   btnExclusaoSim.addEventListener('click', function() {
-    // Verifica se a div "div-interna-container-pai-lembretes-excluir" existe
+    
     if (divLembretesExcluir) {
-      // Define o estilo da div "div-interna-container-pai-lembretes-excluir" como "display: none"
+      
       divLembretesExcluir.style.display = 'none';
     }
     
-    // Fecha o modal
     if (modalExclusao) {
       modalExclusao.close()
     }
@@ -204,6 +199,19 @@ function filterTarefas(){
       clickedTab.classList.add("active");
     });
   });
+
+
+  /* Modal de REDIMENTO-DESEMPENHO */
+  const buttonAddMarcador = document.querySelector(".links-buttons-adicao-marcador")
+  const modalAddMarcador = document.querySelector(".dialog-add-marcador")
+  const closeAddMarcador = modalAddMarcador.querySelector(".div-button-exit i")
+
+  buttonAddMarcador.onclick = function () {
+    modalAddMarcador.showModal()
+  }
+  closeAddMarcador.onclick = function () {
+    modalAddMarcador.close()
+  }
 
 
 });
