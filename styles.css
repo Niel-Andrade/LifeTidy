@@ -571,7 +571,7 @@
         cursor: pointer;
     }
 
-    @media (max-height:751px) {
+    @media (max-height:800px) {
         .nav-lateral {
             height: 100%;
         }
