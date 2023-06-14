@@ -84,7 +84,8 @@
         <main class="main-tela-principal">
 
             <div class="div-container-buttons-adicao">
-                <a class="links-buttons-adicao"><i class="fas fa-plus"></i> ADICIONAR LISTA</a>
+                <a class="links-buttons-adicao links-buttons-adicao-lista"><i class="fas fa-plus"></i> ADICIONAR LISTA</a>
+                    
             </div>
 
             <div class="container-hoje-principal">
@@ -224,7 +225,7 @@
                                 <div class="div-sem-tarefas">
                                     <h3>Lista Vazia</h3>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -422,6 +423,78 @@
             </div>
         </div>
     </dialog>
+
+    <!--Modal Nova  Lista -->
+    <dialog class="dialog-add-lista">
+        <div class="div-adicionar-tarefa">
+            <div class="div-h2-tarefa">
+                <h2 class="h2-adicionar-tarefa">ADICIONAR TAREFA</h2>
+                <div class="div-button-exit">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <form class="div-detalhes-tarefas">
+                <div class="div-descricao-tarefa informacoes-inputs">
+                    <h4 class="h4-infomacoes-inputs">TITULO</h4>
+                    <textarea class="select-inputs  select-inputs-tarefa" type="text"></textarea>
+                </div>
+                <div class="div-descricao-tarefa informacoes-inputs">
+                    <h4 class="h4-infomacoes-inputs">ITENS</h4>
+                    <div class="div-tarefas-marcadores">
+                        <button class="button-new"></button>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje"></h2>
+                                <a class="link-prioridade-urgencia">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje"></h2>
+                                <a class="link-prioridade-urgencia p-urgencia-media">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <div class="div-marcar-tarefas">
+                            <div class="div-marcar-tarefas-borda">
+                                <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje"></h2>
+                                <a class="link-prioridade-urgencia p-urgencia-baixa">Urgência</a>
+                            </div>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-conclusao informacoes-inputs">
+                    <div class="div-inicio-conclusao-horario">
+                        <h4 class="h4-infomacoes-inputs">CONCLUSÃO</h4>
+                        <input class="select-inputs" type="date">
+                    </div>
+                    <div class="div-inicio-conclusao-horario">
+                        <h4 class="h4-infomacoes-inputs h4-infomacoes-inputs-horario">HORÁRIO</h4>
+                        <input class="select-inputs" type="time">
+                    </div>
+                </div>
+                <div class="div-button-nova-tarefa">
+                    <button type="submit" class="button-criar-tarefa">CRIAR LISTA</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <script>
+        /* Modal de add lista*/
+  const buttonAddLista = document.querySelector(".links-buttons-adicao-lista")
+  const modalLista = document.querySelector(".dialog-add-lista")
+  const closeLista = modalLista.querySelector(".div-button-exit i")
+
+  buttonAddLista.onclick = function () {
+    modalLista.showModal()
+  }
+  closeLista.onclick = function () {
+    modalLista.close()
+  }
+    </script>
 </body>
 
 </html>

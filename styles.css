@@ -2242,7 +2242,27 @@
         cursor: pointer;
     }
 
-    .dialog-add-marcador .div-button-nova-tarefa{
+    .dialog-add-marcador .div-button-nova-tarefa {
         margin-top: 2em;
     }
 
+    /*MODAL ADICIONAR LISTA*/
+
+    .dialog-add-lista .div-button-nova-tarefa {
+        margin-top: 2em;
+    }
+
+    .dialog-add-lista .div-marcar-tarefas a {
+        opacity: 0;
+        cursor: default;
+    }
+
+    .dialog-add-lista .div-marcar-tarefas h2 {
+        height: 21px;
+    }
+    .dialog-add-lista .div-marcar-tarefas {
+        align-items: baseline;
+    }
+    .dialog-add-lista i{
+        font-size: 18px;
+    }

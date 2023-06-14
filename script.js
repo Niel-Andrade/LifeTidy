@@ -183,8 +183,6 @@ function filterTarefas(){
     modalInformativo.close()
   }
 
-
-
   //Botão no informativo de rendimento
   const tabs = document.querySelectorAll(".nav-button");
 
@@ -199,20 +197,5 @@ function filterTarefas(){
       clickedTab.classList.add("active");
     });
   });
-
-
-  /* Modal de REDIMENTO-DESEMPENHO */
-  const buttonAddMarcador = document.querySelector(".links-buttons-adicao-marcador")
-  const modalAddMarcador = document.querySelector(".dialog-add-marcador")
-  const closeAddMarcador = modalAddMarcador.querySelector(".div-button-exit i")
-
-  buttonAddMarcador.onclick = function () {
-    modalAddMarcador.showModal()
-  }
-  closeAddMarcador.onclick = function () {
-    modalAddMarcador.close()
-  }
-
-
 });
 

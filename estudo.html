@@ -84,7 +84,8 @@
         <main class="main-tela-principal">
 
             <div class="div-container-buttons-adicao">
-                <a class="links-buttons-adicao links-buttons-adicao-marcador"><i class="fas fa-plus"></i> ADICIONAR MARCADOR</a>
+                <a class="links-buttons-adicao links-buttons-adicao-marcador"><i class="fas fa-plus"></i> ADICIONAR
+                    MARCADOR</a>
                 <a class="links-buttons-adicao"><i class="fa fa-th-list"></i></i> TODOS OS MARCADORES</a>
             </div>
 
@@ -498,21 +499,21 @@
                         <div class="div-marcar-tarefas">
                             <div class="div-marcar-tarefas-borda">
                                 <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
-                                <a class="link-prioridade-urgencia" href="#">Urgência</a>
+                                <a class="link-prioridade-urgencia">Urgência</a>
                             </div>
                             <i class="fas fa-trash"></i>
                         </div>
                         <div class="div-marcar-tarefas">
                             <div class="div-marcar-tarefas-borda">
                                 <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
-                                <a class="link-prioridade-urgencia p-urgencia-media" href="#">Urgência</a>
+                                <a class="link-prioridade-urgencia p-urgencia-media">Urgência</a>
                             </div>
                             <i class="fas fa-trash"></i>
                         </div>
                         <div class="div-marcar-tarefas">
                             <div class="div-marcar-tarefas-borda">
                                 <h2 class="h5-nome-tarefa h5-nome-tarefa-hoje">Vistoria Veícular</h2>
-                                <a class="link-prioridade-urgencia p-urgencia-baixa" href="#">Urgência</a>
+                                <a class="link-prioridade-urgencia p-urgencia-baixa">Urgência</a>
                             </div>
                             <i class="fas fa-trash"></i>
                         </div>
@@ -534,6 +535,19 @@
             </form>
         </div>
     </dialog>
+    <script>
+        /* Modal de add marcardor */
+        const buttonAddMarcador = document.querySelector(".links-buttons-adicao-marcador")
+        const modalAddMarcador = document.querySelector(".dialog-add-marcador")
+        const closeAddMarcador = modalAddMarcador.querySelector(".div-button-exit i")
+
+        buttonAddMarcador.onclick = function () {
+            modalAddMarcador.showModal()
+        }
+        closeAddMarcador.onclick = function () {
+            modalAddMarcador.close()
+        };
+    </script>
 </body>
 
 </html>
