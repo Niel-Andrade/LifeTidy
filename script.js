@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
   calendar.render();
 
 
+  // Sub menu no Header
+
+  const divImgPerfil = document.querySelector('.div-img-perfil');
+
+  divImgPerfil.addEventListener('click', function () {
+    divImgPerfil.classList.toggle('active');
+  });
+
 
   // Navegação Lateral
   $(document).ready(function () {
@@ -69,15 +77,15 @@ document.addEventListener('DOMContentLoaded', function () {
   function openModal() {
     modalTarefa.showModal()
   }
-  
+
   buttonNew.onclick = openModal;
-  buttonNewTarefa.forEach(function(button) { //Qualquer button.new clicado, abrirá o Modal Tarefa
+  buttonNewTarefa.forEach(function (button) { //Qualquer button.new clicado, abrirá o Modal Tarefa
     button.onclick = openModal;
   });
-  buttonEdit.forEach(function(button) { //Qualquer fa-pencil-alt clicado, abrirá o Modal Tarefa
+  buttonEdit.forEach(function (button) { //Qualquer fa-pencil-alt clicado, abrirá o Modal Tarefa
     button.onclick = openModal;
   });
-  
+
 
 
   closeTarefa.onclick = function () {
@@ -94,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalExclusao.showModal()
   }
 
-  buttonExlusao.forEach(function(button) { //Qualquer fa-trash clicado, abrirá o Modal Exclusão
+  buttonExlusao.forEach(function (button) { //Qualquer fa-trash clicado, abrirá o Modal Exclusão
     button.onclick = openModalExclusao;
   });
 
@@ -104,9 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const buttonConfirmacaoExclusao = document.querySelector(".buttons-exclusao-sim");
 
-buttonConfirmacaoExclusao.addEventListener("click", function() {
-  alert("Função em Desenvolvimento");
-});
+  buttonConfirmacaoExclusao.addEventListener("click", function () {
+    alert("Função em Desenvolvimento");
+  });
 
   /* MODAL DE NOTIFICAÇÕES */
   const buttonNotificacoes = document.querySelector(".button-aviso")
