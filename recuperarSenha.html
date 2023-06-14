@@ -45,11 +45,10 @@
         document.getElementsByClassName("form-cadastro")[0].addEventListener("submit", function (event) {
             event.preventDefault();
 
-            var data = document.getElementsByClassName("input-data")[0].value;
             var email = document.getElementsByClassName("input-email")[0].value;
             
 
-            if (data !== "" && email !== "") {
+            if (email !== "") {
                 window.location.href = "emailEnviado.html";
             } else {
                 alert("Por favor, preencha todos os campos.");

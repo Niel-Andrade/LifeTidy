@@ -58,11 +58,10 @@
         event.preventDefault();
       
         var nome = document.getElementsByClassName("input-user")[0].value;
-        var data = document.getElementsByClassName("input-data")[0].value;
         var email = document.getElementsByClassName("input-email")[0].value;
         var senha = document.getElementsByClassName("input-senha")[0].value;
       
-        if (nome !== "" && data !== "" && email !== "" && senha !== "") {
+        if (nome !== "" && email !== "" && senha !== "") {
           window.location.href = "contaCriada.html";
         } else {
           alert("Por favor, preencha todos os campos.");
