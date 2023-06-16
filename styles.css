@@ -2130,6 +2130,7 @@
             height: 37px;
             width: 105px;
             padding: 0 5px;
+            text-align: center;
         }
     }
 
@@ -2267,6 +2268,16 @@
 
     .dialog-add-lista i {
         font-size: 18px;
+    }
+
+
+    @media(max-width: 470px) {
+        .div-marcar-tarefas h2 {
+            min-width: 85px;
+        }
+        .div-marcar-tarefas a{
+            margin: 0px 5px;
+        }
     }
 
     /**/
