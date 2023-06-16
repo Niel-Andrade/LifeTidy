@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "",
   "scope": "/index.html",
-  "start_url": "/",
+  "start_url": "/LifeTidy/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
