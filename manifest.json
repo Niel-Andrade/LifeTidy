@@ -5,8 +5,8 @@
   "background_color": "#0A3950",
   "display": "standalone",
   "orientation": "",
-  "scope": "/index.html",
-  "start_url": "/LifeTidy/",
+  "scope": "/",
+  "start_url": "/LifeTidy/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
