@@ -5,7 +5,7 @@
 <img src="./screenshots/TelaDeApresentação.png" alt="screenshots-Login" >
 
 ## Tela de Cadastro e de Login
-<img src="./screenshots/login.png" width="350px" alt="screenshots-Login" > <img src="./screenshots/Cadastro.png" height="360px" width="510px"  alt="screenshots-Cadastro" >
+<img src="./screenshots/login.png" width="320px" alt="screenshots-Login" > <img src="./screenshots/Cadastro.png" height="360px" width="480px"  alt="screenshots-Cadastro" >
 
 ## Tela Inicial
 <img src="./screenshots/telaDeHome.png" alt="screenshots-Tela-Inicial" >
