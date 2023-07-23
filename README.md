@@ -1,5 +1,5 @@
 # Projeto Life Tidy
-> (Em desenvolvimento)
+> (Em desenvolvimento) Site: https://niel-andrade.github.io/LifeTidy
 
 ## Tela de Apresentação
 <img src="./screenshots/TelaDeApresentação.png" alt="screenshots-Login" >
